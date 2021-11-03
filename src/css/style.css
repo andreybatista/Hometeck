@@ -327,6 +327,7 @@ input.w-100:focus-visible {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
+    white-space: nowrap;
 }
 
 .titulo-destaque .linha {
@@ -410,4 +411,136 @@ input.w-100:focus-visible {
     margin: 0 auto;
 }
 
+.slider-produto a .box-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 160px;
+    width: 100%;
+}
+
 /*Listagem Produtos*/
+
+/*Banner Home*/
+
+.bannerHome {
+    padding: 25px 16px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bannerHome .fundo {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 26px 19px;
+    position: relative;
+}
+
+.bannerHome .fundo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--branco);
+    margin: 0;
+}
+
+.bannerHome .fundo h2 strong {
+    font-weight: 400;
+}
+
+.bannerHome .fundo span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+    text-transform: lowercase;
+    color: var(--branco);
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+/*Banner Home*/
+
+/*Banner Secundario*/
+
+.bannerSecundario .box-imagem {
+    padding: 10px 16px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.bannerSecundario .box-imagem.segundo {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.bannerSecundario .box-imagem .fundo {
+    padding: 26px 8px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 65%;
+    position: relative;
+}
+
+.bannerSecundario .box-imagem.segundo .fundo h2 {
+    text-align: right;
+}
+
+.bannerSecundario .box-imagem .fundo h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--branco);
+}
+
+.bannerSecundario .box-imagem .fundo h2 strong {
+    font-weight: 400;
+}
+
+.bannerSecundario .box-imagem .fundo span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    text-transform: lowercase;
+    color: var(--branco);
+}
+
+.bannerSecundario .box-imagem.segundo span {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+/*Banner Secundario*/
+
+/*Footer*/
+
+footer {
+    background-color: var(--azul);
+    min-height: 200px;
+    height: 200px;
+}
+
+/*Footer*/
