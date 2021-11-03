@@ -40,3 +40,14 @@ $('.slider-principal').slick({
     dots: true,
     dotsClass: 'dots-slider-principal',
 });
+
+$('.slider-produto').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button type="button" class="arrows-position slider-principal-prev"><img class="img-fluid" src="img/arrowleft-produto.png"></button>',
+    nextArrow: '<button type="button" class="arrows-position slider-principal-next"><img class="img-fluid" src="img/arrowrigth-produto.png"></button>',
+    dots: false,
+});
+
