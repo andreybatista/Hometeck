@@ -525,12 +525,14 @@ input.w-100:focus-visible {
     text-decoration-line: underline;
     text-transform: lowercase;
     color: var(--branco);
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
 }
 
 .bannerSecundario .box-imagem.segundo span {
-    position: absolute;
+    left: unset;
     right: 10px;
-    bottom: 5px;
 }
 
 /*Banner Secundario*/
