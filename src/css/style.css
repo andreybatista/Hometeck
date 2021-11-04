@@ -537,6 +537,40 @@ input.w-100:focus-visible {
 
 /*Banner Secundario*/
 
+/*Botão Whatsapp*/
+
+.btnWhatsapp {
+    position: fixed;
+    left: 16px;
+    bottom: 20px;
+}
+
+/*#btnUp {
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+}*/
+
+#btnUp {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    color: #fff;
+    background: rgba(00, 00, 00, 0.3);
+    border: none;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+#btnUp.is-visible {
+    opacity: 1;
+}
+
+/*Botão Whatsapp*/
+
 /*Footer*/
 
 footer {
