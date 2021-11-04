@@ -165,7 +165,7 @@ ul.nav-categorias li a {
     color: var(--azul);
     margin-bottom: 0;
     position: relative;
-    padding: 5px;
+    padding: 10px;
     transition: all 0.5s;
 }
 
