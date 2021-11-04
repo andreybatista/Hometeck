@@ -22,6 +22,9 @@
 <body>
 
     <header>
+        <div class="aviso">
+            Cadastre sua empresa. Acesso imediato às ofertas exclusivas para CNPJ!
+        </div>
         <!--Header Mobile-->
         <div class="h-m">
             <div class="container">
@@ -92,7 +95,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row" style="padding-top: 10px; padding-bottom: 15px;">
+                <div class="row pt-0 pb-3">
                     <div class="col-md-2 d-flex flex-row justify-content-start align-items-center">
                         <a href="">
                             <img class="img-fluid" src="img/logo_desk.png">
@@ -130,7 +133,7 @@
                         </h2>
 
                     </div>
-                    <div class="col-md-1 d-flex flex-row justify-content-start align-items-center">
+                    <div class="col-md-1 d-flex flex-row justify-content-end align-items-center">
                         <a class="box-cart position-relative">
                             <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25.8909 29.7142C25.4035 30.4789 25.1425 31.3754 25.1432 32.2942L25.8909 29.7142ZM25.8909 29.7142H26.0618V29.4642L25.86 29.3166C25.8244 29.3652 25.7898 29.4144 25.756 29.4642H19.1835C19.1502 29.4147 19.116 29.3658 19.081 29.3175L18.8786 29.4642V29.7142H19.048C19.5301 30.4763 19.7971 31.3741 19.7971 32.2942C19.7971 34.8902 17.7461 37 15.2224 37C12.6987 37 10.6476 34.8902 10.6476 32.2942L25.8909 29.7142ZM11.6437 26.123L11.473 26.4807H11.8694H38.4214C38.7701 26.4809 39.1061 26.6229 39.3555 26.878C39.6051 27.1333 39.7476 27.4811 39.75 27.846C39.7496 28.6082 39.1466 29.2142 38.426 29.2142H33.3742H32.8842L33.1718 29.611C33.7298 30.3807 34.0427 31.3247 34.0427 32.2942C34.0427 34.7588 32.097 36.75 29.718 36.75C27.339 36.75 25.3932 34.7588 25.3932 32.2942V32.2939C25.3924 31.3256 25.6983 30.3841 26.2635 29.6119L26.5545 29.2142H26.0618H18.8786H18.3886L18.6762 29.611C19.2342 30.3807 19.5471 31.3247 19.5471 32.2942C19.5471 34.7588 17.6014 36.75 15.2224 36.75C12.8434 36.75 10.8976 34.7588 10.8976 32.2942V32.2939C10.8968 31.3256 11.2027 30.3841 11.7679 29.6119L12.0589 29.2142H11.5662H8.76602C8.26707 29.2142 7.81291 28.9274 7.58599 28.4644L7.58511 28.4627C7.47253 28.2374 7.42325 27.9838 7.44332 27.7306C7.46338 27.4774 7.55191 27.2357 7.69812 27.0327L7.70449 27.0239L7.71006 27.0145L11.0452 21.4143L11.0945 21.3315L11.0756 21.2371L8.48499 8.33507L8.48482 8.3342L7.43254 3.18805L7.39166 2.98813H7.1876H1.57396C1.22514 2.98813 0.889129 2.84566 0.640258 2.58966C0.391155 2.33341 0.25 1.98441 0.25 1.61907C0.25 1.25372 0.391155 0.904717 0.640258 0.648475C0.889129 0.392473 1.22514 0.25 1.57396 0.25H8.46283C9.08022 0.25 9.63197 0.703677 9.76062 1.33422L9.76075 1.33484L10.0015 2.49984L10.0426 2.69854L10.2455 2.69924L38.4245 2.79555C38.4246 2.79555 38.4247 2.79555 38.4248 2.79555C38.6136 2.79674 38.8002 2.84013 38.9716 2.92299C39.143 3.00584 39.2954 3.1263 39.418 3.27649C39.6656 3.58132 39.7684 3.98489 39.7002 4.37879L36.6326 22.0412C36.6326 22.0413 36.6326 22.0414 36.6325 22.0415C36.5188 22.6881 35.9766 23.1462 35.3539 23.1462H35.3535L13.2021 23.1875L13.0447 23.1878L12.9769 23.3298L11.6437 26.123ZM10.9026 5.3915L10.5952 5.39046L10.6569 5.69166L13.6487 20.2999L13.6897 20.5002L13.8941 20.4998L34.0613 20.4631L34.2713 20.4627L34.3072 20.2559L36.822 5.77141L36.8726 5.47965L36.5765 5.47865L10.9026 5.3915ZM13.5634 32.2942C13.5634 33.2236 14.3019 33.9935 15.2224 33.9935C15.6647 33.9935 16.0874 33.8127 16.3979 33.4933C16.7083 33.1741 16.8814 32.7426 16.8814 32.2942C16.8814 31.3647 16.1429 30.5948 15.2224 30.5948C14.3019 30.5948 13.5634 31.3647 13.5634 32.2942ZM28.059 32.2942C28.059 33.2236 28.7975 33.9935 29.718 33.9935C30.1603 33.9935 30.583 33.8127 30.8935 33.4933C31.2038 33.1741 31.377 32.7426 31.377 32.2942C31.377 31.3647 30.6385 30.5948 29.718 30.5948C28.7975 30.5948 28.059 31.3647 28.059 32.2942Z" fill="#336699" stroke="white" stroke-width="0.5" />
@@ -193,7 +196,7 @@
     </header>
     <div id="slideMenu" class="menu effect" style="left: -100%;">
         <div class="slide-header d-flex flex-row justify-content-start align-items-center">
-            <button id="btnMenu">
+            <button id="btnMenus">
                 <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="30" height="4" rx="2" fill="#336699" />
                     <rect y="12" width="30" height="4" rx="2" fill="#336699" />
@@ -321,7 +324,92 @@
         </svg>
     </a>
 
-    <footer></footer>
+    <footer class="footer-section">
+        <div class="container footer-middle">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="footer-contact ul-li-block">
+                        <h2 class="footer-title">informações de contato</h2>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="contact-text">
+                                    <strong>
+                                        <span class="mb-15">CNPJ 07.607.904/0001-29</span><br>
+                                        <span>SOL COMERCIO E SERVICOS DE INFORMATICA LTDA EPP</span>
+                                    </strong>
+                                </div>
+                            </li>
+
+                            <li>
+
+                                <div class="contact-text">
+                                    SCLRN 703 BL D LOJAS 21 33 E 41, ASA NORTE - BRASILIA, <br>
+                                    70730514 - ASA NORTE - BRASÍLIA/DF
+                                </div>
+                            </li>
+                            <li>
+
+                                <div class="contact-text phone">
+                                    <span>RJ - UNIDADE RIO DE JANEIRO</span><br><a href="tel:(021) 3547-9090"> &nbsp;(021) 3547-9090</a><br>
+                                </div>
+                            </li>
+                            <li>
+
+                                <div class="contact-text email">
+                                    <strong>Email:</strong><a href="mailto:lojavirtual@soltelecomunicacoes.com.br">&nbsp;lojavirtual@soltelecomunicacoes.com.br</a>
+                                </div>
+                            </li>
+                            <li>
+
+                                <div class="contact-text">
+                                    <strong>Horário:</strong> Segunda a Sexta das 8h00 às 18h00
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="useful-links ul-li-block">
+                        <h2 class="footer-title">minha conta</h2>
+                        <ul class="clearfix">
+
+                            <li><a href="/login">Acesso</a></li>
+                            <li><a href="/cart">Carrinho</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="useful-links ul-li-block">
+                        <h2 class="footer-title">comprando de nós</h2>
+                        <ul class="clearfix">
+                            <li><a href="/help/infopage/ae856743-ad66-4e4b-9773-b82bd0d9fe42">Formas de Pagamento</a></li>
+                            <li><a href="/help/infopage/9e067493-1f9a-4332-829a-d7bc9cbafb02">Trocas e Devoluções</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="useful-links ul-li-block">
+                        <h2 class="footer-title">informações</h2>
+                        <ul class="clearfix">
+                            <li><a href="/help/infopage/22bc2844-033d-4d37-b1ca-45798a326252">Sobre nós</a></li>
+                            <li><a href="/help/infopage/a1213d06-535d-4d8f-bcb3-47ca7b337891">Informações de Entrega</a></li>
+                            <li><a href="/help/infopage/c3cc62c6-50b7-4dfa-9331-0b9c05184230">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <div class="container sign">
+                <p class="m-0">Copyright © 2021, desenvolvido por <a href="http://www.forshcommerce.com.br" class="color-sky-blue" target="_blank"><strong>Forsh Commerce</strong></a> Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

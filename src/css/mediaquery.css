@@ -184,12 +184,27 @@
     }
 }
 
+@media(max-width: 1200px) {
+    .box-login h2 {
+        font-size: 14px;
+    }
+}
+
 @media(max-width: 768px) {
     .h-m {
         display: block !important;
     }
     .h-d {
         display: none!important;
+    }
+    .aviso {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    ul.nav-categorias li a {
+        font-size: 13px;
     }
 }
 

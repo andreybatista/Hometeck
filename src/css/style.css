@@ -14,6 +14,7 @@ body {
 }
 
 a {
+    cursor: pointer !important;
     text-decoration: none !important;
 }
 
@@ -36,10 +37,38 @@ a {
     overflow: auto;
 }
 
+#slideMenu::-webkit-scrollbar {
+    width: 3px;
+}
+
+#slideMenu::-webkit-scrollbar-thumb {
+    background-color: var(--azul);
+}
+
+button.arrows-position.slider-principal-prev.slick-arrow svg {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
 header {
     padding-top: 14px !important;
     padding-right: 2px;
     padding-left: 2px;
+    background-color: var(--branco);
+}
+
+header .aviso {
+    background-color: var(--azul);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--branco);
+    padding: 8px 0;
 }
 
 .box-login h2 {
@@ -92,7 +121,7 @@ header {
 .nav-paginas {
     list-style: none;
     display: flex;
-    padding: 0;
+    padding: 15px 0;
     margin: 0;
     justify-content: end;
 }
@@ -135,12 +164,32 @@ ul.nav-categorias li a {
     line-height: 24px;
     color: var(--azul);
     margin-bottom: 0;
+    position: relative;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+ul.nav-categorias li a::before {
+    content: "";
+    width: 0%;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    bottom: 0;
+    background-color: var(--azul);
+    transition: all 0.5s;
+}
+ul.nav-categorias li a:hover::before {
+    width: 100%;
+    transition: all 0.5s;
 }
 
 ul.nav-categorias li a strong {
     font-weight: 500;
 }
-
+ul.nav-categorias li a.btn-calculadora::before {
+    display: none;
+}
 .btn-calculadora {
     background: var(--branco);
     border: 1px solid var(--azul);
@@ -150,6 +199,10 @@ ul.nav-categorias li a strong {
 }
 
 #btnMenu {
+    background: none;
+    border: none;
+}
+#btnMenus {
     background: none;
     border: none;
 }
@@ -283,7 +336,7 @@ ul.nav-categorias li a strong {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: var(--cinza);
+    color: var(--azul);
     padding: 5px 0 5px 30px;
 }
 
@@ -562,6 +615,17 @@ a .btnComprar {
     justify-content: center;
     padding: 9px 12px;
     margin: 0 auto;
+    transition: all 0.5s;
+}
+
+a .btnComprar:hover{
+    transition: 0.4s;
+    background: var(--azul);
+    color: var(--branco);
+}
+a .btnComprar:hover svg path {
+    transition: 0.3s;
+    fill: var(--branco);
 }
 
 a .btnComprar svg {
@@ -737,9 +801,44 @@ a img {
 /*Footer*/
 
 footer {
+    padding-top: 20px;
     background-color: var(--azul);
-    min-height: 200px;
-    height: 200px;
+}
+
+.footer-section .footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li, .footer-section ul li a {
+    width: 100%;
+    display: table;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--branco);
+}
+
+.footer-section .footer-bottom {
+    background-color: var(--branco);
+    padding: 30px 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.footer-section .footer-bottom .container.sign p a {
+    color: var(--azul);
 }
 
 /*Footer*/

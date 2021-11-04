@@ -11,7 +11,10 @@ document.querySelector('#btnMenu').addEventListener('click', e => {
 
 document.querySelector('#btnClose').addEventListener('click', e => {
   open = false;
-
+  toggleMenu();
+})
+document.querySelector('#btnMenus').addEventListener('click', e => {
+  open = false;
   toggleMenu();
 })
 document.querySelector('.background-slider').addEventListener('click', e => {
@@ -24,9 +27,11 @@ function toggleMenu() {
   document.querySelector('.background-slider').style.display = "block";
   if (open) {
     document.querySelector('#slideMenu').style.left = "0%";
+    document.querySelector('body').style.overflow = "hidden";
     return;
   }
   document.querySelector('.background-slider').style.display = "none";
+  document.querySelector('body').style.overflow = "auto";
   document.querySelector('#slideMenu').style.left = `-${menuSize}`;
 }
 
@@ -48,10 +53,9 @@ $('.slider-produto').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
-  prevArrow: '<button type="button" class="arrows-position slider-principal-prev"><img class="img-fluid" src="img/arrowleft-produto.png"></button>',
-  nextArrow: '<button type="button" class="arrows-position slider-principal-next"><img class="img-fluid" src="img/arrowrigth-produto.png"></button>',
-  dots: false,
-  responsive: [
+  prevArrow: '<button type="button" class="arrows-position slider-principal-prev"><svg width="22" height="52" viewBox="0 0 22 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999999 51L21 26L0.999999 1" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+  nextArrow: '<button type="button" class="arrows-position slider-principal-next"><svg width="22" height="52" viewBox="0 0 22 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999999 51L21 26L0.999999 1" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+  dots: false, responsive: [
     {
       breakpoint: 768,
       settings: {
