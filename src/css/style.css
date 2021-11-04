@@ -205,6 +205,15 @@ input.w-100:focus-visible {
 
 /*Slider Principal*/
 
+.box-slide {
+    min-height: 380px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .slider-principal-prev {
     position: absolute;
     left: 0;
@@ -301,7 +310,7 @@ input.w-100:focus-visible {
     opacity: 1;
 }
 
-.titulo-informativo {
+.titulo-informativo span {
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
@@ -398,12 +407,13 @@ input.w-100:focus-visible {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     padding: 9px 12px;
     margin: 0 auto;
 }
 
-.slider-produto a .btnComprar img {
+.slider-produto a .btnComprar svg {
+    width: 12px;
+    height: 15px;
     margin-right: 6px;
 }
 
@@ -414,17 +424,16 @@ input.w-100:focus-visible {
 .slider-produto a .box-img {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     height: 160px;
     width: 100%;
 }
-
 /*Listagem Produtos*/
 
 /*Banner Home*/
 
 .bannerHome {
-    padding: 25px 16px;
+    padding: 25px 30px !important;
     margin-bottom: 40px;
     background-repeat: no-repeat;
     background-position: center;
@@ -580,3 +589,28 @@ footer {
 }
 
 /*Footer*/
+
+/*ScrollTop*/
+
+#buttonTop {
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#buttonTop:hover {
+    cursor: pointer;
+}
+
+#buttonTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*ScrollTop*/

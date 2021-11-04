@@ -1,0 +1,134 @@
+@media(max-width: 575px) {
+    .container.fluid-xs {
+        padding: 0;
+    }
+    .box-slide {
+        min-height: 180px;
+    }
+}
+
+@media(min-width: 575px) {
+    hr.linha-vertical {
+        display: none;
+    }
+    hr.linha-horizontal {
+        display: none;
+    }
+    h2.titulo-informativo {
+        border-right: 1px solid var(--azul);
+        width: 100%;
+    }
+    .informativo:first-child h2.titulo-informativo {
+        border-left: 1px solid var(--azul);
+    }
+    .titulo-informativo {
+        padding: 41px 0px;
+    }
+}
+
+/*FONTS DESKTOP*/
+
+@media(min-width: 768px) {
+    .titulo-informativo span {
+        width: 83%;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        width: 83%;
+        margin: 0 auto;
+    }
+    .slider-produto a .nomeProduto {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .slider-produto a .categoria {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .slider-produto a .btnComprar {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .slider-produto a .btnComprar svg {
+        width: 18px;
+        height: 22px;
+    }
+    .list-produto .titulo-destaque span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .bannerHome .fundo h2 {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .bannerHome {
+        padding: 50px 80px !important;
+    }
+    .bannerHome .fundo {
+        padding: 26px 19px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerHome .fundo span {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 24px;
+        bottom: 20px;
+        right: 60px;
+    }
+    .bannerSecundario .box-imagem {
+        padding: 30px;
+    }
+    .bannerSecundario .box-imagem .fundo {
+        padding: 20px 34px 60px 20px;
+        width: 100%;
+    }
+    .bannerSecundario .box-imagem .fundo h2 {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .bannerSecundario .box-imagem .fundo span {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 24px;
+        left: 20px;
+        bottom: 20px;
+    }
+    .bannerSecundario .box-imagem.segundo span {
+        left: unset;
+        right: 20px;
+    }
+}
+
+@media(min-width: 992px) {
+    .titulo-informativo span {
+        width: 69%;
+    }
+    .bannerSecundario .box-imagem .fundo {
+        width: 70%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .titulo-informativo span {
+        width: 57%;
+    }
+}
