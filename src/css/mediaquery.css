@@ -22,13 +22,37 @@
         border-left: 1px solid var(--azul);
     }
     .titulo-informativo {
-        padding: 41px 0px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 /*FONTS DESKTOP*/
 
 @media(min-width: 768px) {
+    header {
+        padding: 0 0 40px 0!important;
+    }
+    .row-xs {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+    .row-xs>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
     .titulo-informativo span {
         width: 83%;
         font-style: normal;
@@ -38,25 +62,41 @@
         width: 83%;
         margin: 0 auto;
     }
-    .slider-produto a .nomeProduto {
+    a .nomeProduto {
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
     }
-    .slider-produto a .categoria {
+    a .categoria {
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
     }
-    .slider-produto a .btnComprar {
+    .old-price {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .new-price {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+    }
+    a .btnComprar {
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
+        width: 100%;
     }
-    .slider-produto a .btnComprar svg {
+    a .btnComprar svg {
         width: 18px;
         height: 22px;
     }
@@ -93,6 +133,8 @@
     }
     .bannerSecundario .box-imagem {
         padding: 30px;
+        box-sizing: border-box;
+        min-height: 210px;
     }
     .bannerSecundario .box-imagem .fundo {
         padding: 20px 34px 60px 20px;
@@ -116,6 +158,12 @@
         left: unset;
         right: 20px;
     }
+    .cabeca {
+        position: absolute;
+        top: 3px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
 }
 
 @media(min-width: 992px) {
@@ -124,6 +172,9 @@
     }
     .bannerSecundario .box-imagem .fundo {
         width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -131,4 +182,21 @@
     .titulo-informativo span {
         width: 57%;
     }
+}
+
+@media(max-width: 768px) {
+    .h-m {
+        display: block !important;
+    }
+    .h-d {
+        display: none!important;
+    }
+}
+
+.h-d {
+    display: block;
+}
+
+.h-m {
+    display: none;
 }
