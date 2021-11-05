@@ -1044,23 +1044,30 @@ a.produto-categoria:first-child {
 select {
     border: none;
     padding: 8px 10px;
-    margin-left: 20px !important;
+    margin-left: 0!important;
     cursor: pointer;
     /* CINZA_CLARO */
     background: var(--cinza-claro);
     /* Header_Bar */
     box-shadow: 0px 1px 3px rgba(199, 199, 199, 0.5);
     border-radius: 3px;
-    width: 140px;
+    width: 105px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 18px;
     color: var(--cinza-escuro);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+.row-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 select:focus-visible {
