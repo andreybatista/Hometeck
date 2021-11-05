@@ -20,6 +20,19 @@
 </head>
 
 <body>
+    <div id="loader" class="loader flex-column justify-content-center align-items-center">
+        <div class="demo-wrapper html5-progress-bar">
+            <img class="img-fluid" src="img/logo_white.png">
+            <div class="progress-bar-wrapper">
+                <progress id="progressbar" class="w-100" value="0" max="100"></progress>
+            </div>
+        </div>
+    </div>
+
+
+    <?php
+    $logado = true;
+    ?>
 
     <header>
         <div class="aviso">
@@ -121,6 +134,7 @@
                                 </svg>
                             </div>
                         </div>
+
                         <h2>
                             Bem-vindo!<br>
                             <a>
@@ -159,7 +173,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href="#">
                                     Drywall
                                 </a>
                             </li>
@@ -258,21 +272,21 @@
             <h2>
                 Hometeck Atacadista
             </h2>
-            <ul>
+            <ul class="atacadista">
                 <li>
-                    <a>
+                    <a class='cor-azul'>
                         <img class="img-fluid" src="img/logo_menulateral.png">
                         Sobre nós
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a class='cor-azul'>
                         <img class="img-fluid" src="img/icon_regulamentos.png">
                         Regulamentos
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a class='cor-azul'>
                         <img class="img-fluid" src="img/icon_localizacao.png">
                         Nossas lojas
                     </a>
@@ -283,17 +297,17 @@
                 Facilidade pra Você
             </h2>
             <ul>
-                <button class="w-100 d-flex flex-row justify-content-start align-items-center">
+                <a class="w-100 d-flex flex-row justify-content-center align-items-center btn-button">
                     <img class="img-fluid" src="img/icon_calculadora.png">
                     Calculadora de Materias
-                </button>
-                <button class="w-100 d-flex flex-row justify-content-center align-items-center">
+                </a>
+                <a class="w-100 d-flex flex-row justify-content-center align-items-center btn-button">
                     <img class="img-fluid" src="img/icon_solicitarorcamento.png">
                     Solicitar Orçamento
-                </button>
-                <button class="btnlateral-entrar w-100">
+                </a>
+                <a class="btnlateral-entrar w-100 d-flex flex-row justify-content-center align-items-center btn-button">
                     ENTRAR
-                </button>
+                </a>
             </ul>
             <p>
                 Cadastre sua empresa.

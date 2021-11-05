@@ -1,4 +1,22 @@
-'use strict'
+jQuery(window).load(function () {
+  $(document).ready(function () {
+    var progressbar = $('#progressbar'),
+      max = progressbar.attr('max'),
+      time = (100 / max) * 10,
+      value = progressbar.val();
+    var loading = function () {
+      value += 1;
+      addValue = progressbar.val(value);
+      if (value == max) {
+        clearInterval(animate);
+        $(".loader").fadeOut("slow"); //.delay(1500)
+      }
+    };
+    var animate = setInterval(function () {
+      loading();
+    }, time);
+  });
+});
 
 const menuSize = '100%';
 
@@ -13,7 +31,7 @@ document.querySelector('#btnClose').addEventListener('click', e => {
   open = false;
   toggleMenu();
 })
-document.querySelector('#btnMenus').addEventListener('click', e => {
+document.querySelector('#btnMenus ').addEventListener('click', e => {
   open = false;
   toggleMenu();
 })
@@ -60,6 +78,8 @@ $('.slider-produto').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
+        prevArrow: '<button type="button" class="arrows-position slider-principal-prev"><svg width="12" height="32" viewBox="0 0 12 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L1 16L11 31" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        nextArrow: '<button type="button" class="arrows-position slider-principal-next"><svg width="12" height="32" viewBox="0 0 12 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L11 16L1 1" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
       }
     },
   ]

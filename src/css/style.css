@@ -18,6 +18,35 @@ a {
     text-decoration: none !important;
 }
 
+/*Tela Loaging*/
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: var(--azul);
+    display: flex;
+}
+
+#progressbar {
+    border: 1px solid #5690C9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 6px;
+}
+#progressbar[value]::-webkit-progress-bar {
+    background-color: transparent;
+    border-radius: 6px;
+  }
+  #progressbar[value]::-webkit-progress-value {
+    border-radius: 6px;
+    background-color: var(--branco); 
+  }
+/*Fim Tela Loaging*/
+
 .background-slider {
     display: none;
     transform: 0, 4s !important;
@@ -43,13 +72,6 @@ a {
 
 #slideMenu::-webkit-scrollbar-thumb {
     background-color: var(--azul);
-}
-
-button.arrows-position.slider-principal-prev.slick-arrow svg {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
 
 header {
@@ -179,6 +201,7 @@ ul.nav-categorias li a::before {
     background-color: var(--azul);
     transition: all 0.5s;
 }
+
 ul.nav-categorias li a:hover::before {
     width: 100%;
     transition: all 0.5s;
@@ -187,9 +210,11 @@ ul.nav-categorias li a:hover::before {
 ul.nav-categorias li a strong {
     font-weight: 500;
 }
+
 ul.nav-categorias li a.btn-calculadora::before {
     display: none;
 }
+
 .btn-calculadora {
     background: var(--branco);
     border: 1px solid var(--azul);
@@ -202,6 +227,7 @@ ul.nav-categorias li a.btn-calculadora::before {
     background: none;
     border: none;
 }
+
 #btnMenus {
     background: none;
     border: none;
@@ -253,7 +279,13 @@ ul.nav-categorias li a.btn-calculadora::before {
     padding: 0px 45px;
 }
 
-#slideMenu .slide-body ul li {
+#slideMenu .slide-body ul li a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--preto);
     background: var(--branco);
     box-shadow: 0px 1px 3px rgba(199, 199, 199, 0.5);
     border-radius: 3px;
@@ -263,26 +295,74 @@ ul.nav-categorias li a.btn-calculadora::before {
     flex-direction: row;
     justify-self: start;
     align-items: center;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
-#slideMenu .slide-body ul li a {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--preto);
+#slideMenu .slide-body ul li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--azul);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#slideMenu .slide-body ul li a:hover:before, #slideMenu .slide-body ul li a:focus:before, #slideMenu .slide-body ul li a:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#slideMenu .slide-body ul li a:hover, #slideMenu .slide-body ul li a:focus, #slideMenu .slide-body ul li a:active {
+    transition: 0.4s all;
+    color: var(--branco);
+}
+
+#slideMenu .slide-body ul.atacadista li a:hover, #slideMenu .slide-body ul.atacadista li a:focus:before, #slideMenu .slide-body ul.atacadista li a:active:before {
+    transition: 0.4s all;
+    box-shadow: 0px 1px 3px rgba(51, 102, 153, 0.5);
+}
+
+#slideMenu .slide-body ul a.btn-button:hover {
+    transition: 0.5s;
+    box-shadow: 0px 1px 10px rgba(51, 102, 153, 0.5);
+}
+
+#slideMenu .slide-body ul.atacadista li a:before {
+    display: none;
+}
+
+#slideMenu .slide-body ul li a.cor-azul {
+    color: var(--azul);
 }
 
 #slideMenu .slide-body ul li img {
     margin-right: 13px;
 }
 
-#slideMenu .slide-body ul button:first-child {
+#slideMenu .slide-body ul a.btn-button:first-child {
     margin-top: 0 !important;
 }
 
-#slideMenu .slide-body ul button {
+#slideMenu .slide-body ul a.btn-button {
     margin-top: 9px;
     font-family: Poppins;
     font-style: normal;
@@ -290,18 +370,20 @@ ul.nav-categorias li a.btn-calculadora::before {
     font-size: 16px;
     line-height: 24px;
     padding: 6px 13px;
-    background: #FFFFFF;
+    background: var(--branco);
+    color: var(--azul);
     border: 1px solid var(--azul);
     box-sizing: border-box;
     box-shadow: 1px 2px 3px rgb(0 0 0 / 10%);
     border-radius: 3px;
+    transition: 0.5s;
 }
 
-#slideMenu .slide-body ul button img {
+#slideMenu .slide-body ul a.btn-button img {
     margin-right: 6px;
 }
 
-#slideMenu .slide-body ul button.btnlateral-entrar {
+#slideMenu .slide-body ul a.btn-button.btnlateral-entrar {
     background: var(--azul);
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
     font-family: Poppins;
@@ -310,6 +392,44 @@ ul.nav-categorias li a.btn-calculadora::before {
     font-size: 16px;
     line-height: 24px;
     color: var(--branco);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#slideMenu .slide-body ul a.btn-button.btnlateral-entrar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--branco);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#slideMenu .slide-body ul a.btn-button.btnlateral-entrar:hover:before, #slideMenu .slide-body ul a.btn-button.btnlateral-entrar:focus:before, #slideMenu .slide-body ul a.btn-button.btnlateral-entrar:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#slideMenu .slide-body ul a.btn-button.btnlateral-entrar:hover, #slideMenu .slide-body ul a.btn-button.btnlateral-entrar:focus, #slideMenu .slide-body ul a.btn-button.btnlateral-entrar:active {
+    color: var(--azul);
 }
 
 #slideMenu .slide-body p {
@@ -507,7 +627,7 @@ input.w-100:focus-visible {
     text-align: center;
     justify-content: center;
     color: var(--azul);
-    padding: 12px 0;
+    padding: 12px 11px;
     margin: 0;
 }
 
@@ -618,11 +738,12 @@ a .btnComprar {
     transition: all 0.5s;
 }
 
-a .btnComprar:hover{
+a .btnComprar:hover {
     transition: 0.4s;
     background: var(--azul);
     color: var(--branco);
 }
+
 a .btnComprar:hover svg path {
     transition: 0.3s;
     fill: var(--branco);
@@ -632,10 +753,6 @@ a .btnComprar svg {
     width: 12px;
     height: 15px;
     margin-right: 6px;
-}
-
-a img {
-    margin: 0 auto;
 }
 
 .box-img {
