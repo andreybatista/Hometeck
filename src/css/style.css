@@ -130,7 +130,7 @@ header .aviso {
     font-size: 12px;
     line-height: 18px;
     text-align: center;
-    color: #336699;
+    color: var(--azul);
 }
 
 .box-cart {
@@ -502,7 +502,7 @@ ul.nav-categorias li a.btn-calculadora::before {
     font-size: 16px;
     line-height: 24px;
     color: var(--azul);
-    border: 1px solid #336699;
+    border: 1px solid var(--azul);
     box-sizing: border-box;
     border-radius: 3px;
     padding: 8px 0 8px 40px;
@@ -1155,4 +1155,50 @@ select:focus-visible {
     color: var(--branco) !important;
 }
 
-/*Categoria*/
+/*Fim Categoria*/
+
+/*Pagina Produto*/
+
+.btn-voltar {
+    display: inline-block;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--azul);
+    margin-bottom: 10px;
+}
+
+h2.caminho {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--cinza-escuro);
+    margin-bottom: 10px;
+}
+
+.detalhes-produto h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--preto);
+    margin-bottom: 10px;
+}
+
+.detalhes-produto .more {
+    display: block;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--cinza-escuro);
+    margin-bottom: 20px;
+}
+
+/*Fim Pagina Produto*/

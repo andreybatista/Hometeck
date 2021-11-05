@@ -219,6 +219,44 @@
         left: 50%;
         transform: translate(-50%, 0px);
     }
+    .btn-voltar {
+        display: inline-block;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--azul);
+        margin-bottom: 20px;
+    }
+    h2.caminho {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--cinza-escuro);
+        margin-bottom: 40px;
+    }
+    .detalhes-produto h2 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--preto);
+        margin-bottom: 20px;
+    }
+    .detalhes-produto .more {
+        display: block;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--cinza-escuro);
+        margin-bottom: 40px;
+    }
 }
 
 @media(min-width: 992px) {

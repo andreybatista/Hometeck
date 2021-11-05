@@ -85,6 +85,25 @@ $('.slider-produto').slick({
   ]
 });
 
+$('.img-principal').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.galeria'
+});
+$('.galeria').slick({
+  vertical: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.img-principal',
+  dots: false,
+  focusOnSelect: true
+});
+
+
+
+
 
 
 
@@ -109,3 +128,4 @@ btn.on('click', function (e) {
 
 
 /* Scroll Top*/
+
