@@ -3,9 +3,10 @@
     --cinza: #DBDBDB;
     --cinza-desk: #C4C4C4;
     --branco: #FFFFFF;
-    --cinza_claro: #F2F2F2;
+    --cinza-claro: #F2F2F2;
     --preto: #000;
     --vermelho: #FF0000;
+    --cinza-escuro: #848484;
     --menu-size: 95%;
 }
 
@@ -37,14 +38,17 @@ a {
     border-radius: 6px;
     height: 6px;
 }
+
 #progressbar[value]::-webkit-progress-bar {
     background-color: transparent;
     border-radius: 6px;
-  }
-  #progressbar[value]::-webkit-progress-value {
+}
+
+#progressbar[value]::-webkit-progress-value {
     border-radius: 6px;
-    background-color: var(--branco); 
-  }
+    background-color: var(--branco);
+}
+
 /*Fim Tela Loaging*/
 
 .background-slider {
@@ -143,9 +147,13 @@ header .aviso {
 .nav-paginas {
     list-style: none;
     display: flex;
-    padding: 15px 0;
     margin: 0;
     justify-content: end;
+}
+
+.nav-paginas li a {
+    display: inline-block;
+    padding: 15px 0;
 }
 
 .nav-paginas li a h2 {
@@ -187,8 +195,27 @@ ul.nav-categorias li a {
     color: var(--azul);
     margin-bottom: 0;
     position: relative;
-    padding: 10px;
+    padding: 10px 20px;
     transition: all 0.5s;
+}
+
+ul.nav-categorias li a.active {
+    transition: 0.4s;
+    background: var(--azul);
+    border: 1px solid var(--azul);
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: var(--branco);
+}
+
+ul.nav-categorias li a.active:hover {
+    transition: 0.4s;
+    color: var(--azul);
+    background: var(--branco);
+}
+
+ul.nav-categorias li a.active::before {
+    display: none;
 }
 
 ul.nav-categorias li a::before {
@@ -504,7 +531,7 @@ input.w-100:focus-visible {
     top: 0;
     width: var(--menu-size);
     height: 100%;
-    background-color: var(--cinza_claro);
+    background-color: var(--cinza-claro);
     width: 95%;
     transition: 0.4s;
 }
@@ -984,3 +1011,141 @@ footer {
 }
 
 /*ScrollTop*/
+
+/*Categoria*/
+
+.nomeCategoria {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cinza-escuro);
+    margin: 0;
+}
+
+a.produto-categoria {
+    display: inline-block;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    padding: 0 7px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+a.produto-categoria:first-child {
+    border-left: none;
+}
+
+.filter select:focus-visible, .filter select:focus, .filter select:active {
+    border: none !important;
+}
+
+select {
+    border: none;
+    padding: 8px 10px;
+    margin-left: 20px !important;
+    cursor: pointer;
+    /* CINZA_CLARO */
+    background: var(--cinza-claro);
+    /* Header_Bar */
+    box-shadow: 0px 1px 3px rgba(199, 199, 199, 0.5);
+    border-radius: 3px;
+    width: 140px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cinza-escuro);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus-visible {
+    outline: none !important;
+}
+
+.select svg {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15px;
+}
+
+.content-input input, .content-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.content-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.paginacao {
+    margin: 20px 0 60px 0;
+}
+
+.paginacao button {
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.paginacao span {
+    width: 24px;
+    height: 24px;
+    background: var(--azul);
+    border-radius: 50%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    margin: 0 10px;
+}
+
+.paginacao div {
+    margin: 0 10px;
+}
+
+.paginacao a {
+    transition: all 0.4s;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul) !important;
+    margin: 0 10px;
+}
+
+.paginacao a:hover {
+    transition: all 0.4s;
+    background: var(--azul);
+    color: var(--branco) !important;
+}
+
+/*Categoria*/

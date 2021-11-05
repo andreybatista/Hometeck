@@ -39,6 +39,12 @@
 /*FONTS DESKTOP*/
 
 @media(min-width: 768px) {
+    ul.nav-categorias li a {
+        font-size: 9px;
+    }
+    .paginacao button {
+        display: block !important;
+    }
     .gradient-product {
         position: absolute;
         width: 63px;
@@ -187,6 +193,9 @@
 }
 
 @media(min-width: 992px) {
+    ul.nav-categorias li a {
+        font-size: 15px;
+    }
     .titulo-informativo span {
         width: 69%;
     }
@@ -225,6 +234,7 @@
 @media(max-width: 991px) {
     ul.nav-categorias li a {
         font-size: 12px;
+        padding: 10px 9px;
     }
 }
 
