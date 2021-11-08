@@ -1202,3 +1202,9 @@ h2.caminho {
 }
 
 /*Fim Pagina Produto*/
+
+ul.informacao {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
