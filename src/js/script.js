@@ -1,3 +1,4 @@
+/*
 jQuery(window).load(function () {
   $(document).ready(function () {
     var progressbar = $('#progressbar'),
@@ -17,6 +18,11 @@ jQuery(window).load(function () {
     }, time);
   });
 });
+
+jQuery(window).load(function () {
+  $(".loader").delay(1000).fadeOut("slow");
+});
+*/
 
 const menuSize = '100%';
 
@@ -92,16 +98,17 @@ $('.img-principal').slick({
   fade: true,
   asNavFor: '.galeria'
 });
+
 $('.galeria').slick({
   vertical: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.img-principal',
   dots: false,
-  focusOnSelect: true
+  focusOnSelect: true,
+  prevArrow: '<button type="button" class="slider-galeria-prev" style="display: none;"></button>',
+  nextArrow: '<button type="button" class="slider-galeria-next pb-2"><svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L22 16L42 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 });
-
-
 
 
 

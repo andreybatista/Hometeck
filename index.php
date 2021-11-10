@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="http://localhost/hometeck/src/css/style.css">
     <link rel="stylesheet" href="src/css/mediaquery.css">
 
     <!-- Bootstrap CSS -->
@@ -137,11 +137,11 @@
 
                         <h2>
                             Bem-vindo!<br>
-                            <a>
+                            <a href="login.html">
                                 Entre
                             </a>
                             ou
-                            <a>
+                            <a href="cadastro.html">
                                 Cadastre-se!
                             </a>
                         </h2>
@@ -294,6 +294,72 @@
             </ul>
 
             <h2>
+                Meu Acesso
+            </h2>
+            <div class="accordion-menu">
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ultimoPedido" aria-expanded="false" aria-controls="collapse-ultimoPedido">
+                        <div class="box-iconMenu ultimo-pedido">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="7" cy="7" r="6.5" stroke="white" />
+                            </svg>
+                            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 3L3.5 5.5L8 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        Último Pedido
+                    </button>
+                    <div id="collapse-ultimoPedido" class="accordion-collapse collapse" aria-labelledby="heading-ultimoPedido" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-pedidos" aria-expanded="false" aria-controls="collapse-pedidos">
+                        <div class="box-iconMenu meus-dados">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1C4.6632 1 1 4.6632 1 9C1 11.5512 2.2736 13.8624 4.2 15.3392V15.4H4.2816C5.616 16.396 7.2504 17 9 17C10.7496 17 12.384 16.396 13.7184 15.4H13.8V15.3392C15.7264 13.8624 17 11.552 17 9C17 4.6632 13.3368 1 9 1ZM5.8592 14.5416C5.97709 14.0083 6.27323 13.5311 6.69877 13.1888C7.12432 12.8464 7.65384 12.6594 8.2 12.6584H9.8C10.3461 12.6595 10.8756 12.8466 11.3011 13.189C11.7266 13.5313 12.0228 14.0084 12.1408 14.5416C11.2064 15.0832 10.1328 15.4 9 15.4C7.8672 15.4 6.7936 15.0832 5.8592 14.5416ZM13.488 13.5128C13.1828 12.7863 12.6702 12.1659 12.0142 11.7294C11.3582 11.2928 10.588 11.0594 9.8 11.0584H8.2C7.41201 11.0594 6.64181 11.2928 5.98581 11.7294C5.32982 12.1659 4.81716 12.7863 4.512 13.5128C3.3384 12.3456 2.6 10.7408 2.6 9C2.6 5.5304 5.5304 2.6 9 2.6C12.4696 2.6 15.4 5.5304 15.4 9C15.4 10.7408 14.6616 12.3456 13.488 13.5128Z" fill="white" stroke="#336699" stroke-width="0.7" />
+                            </svg>
+                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 1C2.29 1 1 2.29 1 4C1 5.71 2.29 7 4 7C5.71 7 7 5.71 7 4C7 2.29 5.71 1 4 1ZM4 5.5C3.1165 5.5 2.5 4.8835 2.5 4C2.5 3.1165 3.1165 2.5 4 2.5C4.8835 2.5 5.5 3.1165 5.5 4C5.5 4.8835 4.8835 5.5 4 5.5Z" fill="white" stroke="#336699" stroke-width="0.6" />
+                            </svg>
+                        </div>
+                        Meus Dados
+                    </button>
+                    <div id="collapse-pedidos" class="accordion-collapse collapse" aria-labelledby="heading-pedidos" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-boletos" aria-expanded="false" aria-controls="collapse-boletos">
+                        <div class="box-iconMenu">
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5H0.675781V9.50781H0.5V0.5ZM2.82422 0.5H4.17578V9.50781H2.82422V0.5ZM6.32422 0.5H6.5V9.50781H6.32422V0.5ZM8.67578 0.5H8.82422V9.50781H8.67578V0.5ZM13.5 11.4922V11.5H0.5V11.4922H13.5ZM12.1758 9.50781V0.5H12.8242H13.5V9.50781H12.1758Z" fill="#336699" stroke="#336699" />
+                            </svg>
+                        </div>
+                        Meus boletos
+                    </button>
+                    <div id="collapse-boletos" class="accordion-collapse collapse" aria-labelledby="heading-boletos" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Meus boletos
+                    </button>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="collapse4" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>
                 Facilidade pra Você
             </h2>
             <ul>
@@ -305,7 +371,7 @@
                     <img class="img-fluid" src="img/icon_solicitarorcamento.png">
                     Solicitar Orçamento
                 </a>
-                <a class="btnlateral-entrar w-100 d-flex flex-row justify-content-center align-items-center btn-button">
+                <a href="login.html" class="btnlateral-entrar w-100 d-flex flex-row justify-content-center align-items-center btn-button">
                     ENTRAR
                 </a>
             </ul>
@@ -343,75 +409,73 @@
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-sm-12">
                     <div class="footer-contact ul-li-block">
-                        <h2 class="footer-title">informações de contato</h2>
+                        <h2 class="footer-title">
+                            A HOMETECK
+                        </h2>
                         <ul class="clearfix">
                             <li>
                                 <div class="contact-text">
-                                    <strong>
-                                        <span class="mb-15">CNPJ 07.607.904/0001-29</span><br>
-                                        <span>SOL COMERCIO E SERVICOS DE INFORMATICA LTDA EPP</span>
-                                    </strong>
+                                    A HOMETECK
+
+                                    Desde 2000 sendo referência em grandes obras, a Hometeck oferece produtos cada vez
+                                    mais inovadores e serviços de alta qualidade, sempre com honestidade, criatividade e
+                                    o máximo de excelência.
                                 </div>
                             </li>
-
-                            <li>
-
-                                <div class="contact-text">
-                                    SCLRN 703 BL D LOJAS 21 33 E 41, ASA NORTE - BRASILIA, <br>
-                                    70730514 - ASA NORTE - BRASÍLIA/DF
-                                </div>
-                            </li>
-                            <li>
-
-                                <div class="contact-text phone">
-                                    <span>RJ - UNIDADE RIO DE JANEIRO</span><br><a href="tel:(021) 3547-9090"> &nbsp;(021) 3547-9090</a><br>
-                                </div>
-                            </li>
-                            <li>
-
-                                <div class="contact-text email">
-                                    <strong>Email:</strong><a href="mailto:lojavirtual@soltelecomunicacoes.com.br">&nbsp;lojavirtual@soltelecomunicacoes.com.br</a>
-                                </div>
-                            </li>
-                            <li>
-
-                                <div class="contact-text">
-                                    <strong>Horário:</strong> Segunda a Sexta das 8h00 às 18h00
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <div class="useful-links ul-li-block">
-                        <h2 class="footer-title">minha conta</h2>
-                        <ul class="clearfix">
-
-                            <li><a href="/login">Acesso</a></li>
-                            <li><a href="/cart">Carrinho</a></li>
-
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="useful-links ul-li-block">
-                        <h2 class="footer-title">comprando de nós</h2>
+                        <h2 class="footer-title">
+                            CONTATOS
+                        </h2>
                         <ul class="clearfix">
-                            <li><a href="/help/infopage/ae856743-ad66-4e4b-9773-b82bd0d9fe42">Formas de Pagamento</a></li>
-                            <li><a href="/help/infopage/9e067493-1f9a-4332-829a-d7bc9cbafb02">Trocas e Devoluções</a></li>
+                            <li>
+                                <a href="">
+                                    SIA Trecho 3/4, Lote 445/455
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Brasília-DF - 71200-030
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    (61) 3356-5240
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    (61) 3548-1520
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    (61) 99170-7345
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-6 col-sm-12">
                     <div class="useful-links ul-li-block">
-                        <h2 class="footer-title">informações</h2>
+                        <h2 class="footer-title">
+                            HORÁRIO DE FUNCIONAMENTO
+                        </h2>
                         <ul class="clearfix">
-                            <li><a href="/help/infopage/22bc2844-033d-4d37-b1ca-45798a326252">Sobre nós</a></li>
-                            <li><a href="/help/infopage/a1213d06-535d-4d8f-bcb3-47ca7b337891">Informações de Entrega</a></li>
-                            <li><a href="/help/infopage/c3cc62c6-50b7-4dfa-9331-0b9c05184230">Política de Privacidade</a></li>
+                            <li>
+                                Segunda a sexta:<br>
+                                07h30 às 18h.
+                            </li>
+                            <li>
+                                Sábado:<br>
+                                07h30 às 14h.
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -420,7 +484,8 @@
 
         <div class="footer-bottom text-center">
             <div class="container sign">
-                <p class="m-0">Copyright © 2021, desenvolvido por <a href="http://www.forshcommerce.com.br" class="color-sky-blue" target="_blank"><strong>Forsh Commerce</strong></a> Todos os direitos reservados.</p>
+                <p class="m-0">Copyright © 2021, desenvolvido por <a href="http://www.forshcommerce.com.br" class="color-sky-blue" target="_blank"><strong>Forsh Commerce</strong></a> Todos os direitos
+                    reservados.</p>
             </div>
         </div>
     </footer>
