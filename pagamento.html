@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="http://localhost/hometeck/src/css/style.css">
     <link rel="stylesheet" href="src/css/mediaquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,16 +20,13 @@
 
     <link rel="stylesheet" type="text/css" href="src/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="src/css/slick-theme.css" />
+
 </head>
 
 <body>
     <div id="loader" class="loader flex-column justify-content-center align-items-center">
-        <div class="demo-wrapper html5-progress-bar">
-            <img class="img-fluid" src="img/logo_white.png">
-            <div class="progress-bar-wrapper">
-                <progress id="progressbar" class="w-100" value="0" max="100"></progress>
-            </div>
-        </div>
+
+        <img class="img-fluid" src="img/loadinggif.gif">
     </div>
 
     <header>
@@ -114,7 +112,7 @@
             <div class="container">
                 <div class="row pt-0 pb-3">
                     <div class="col-md-2 d-flex flex-row justify-content-start align-items-center">
-                        <a href="">
+                        <a href="index.html">
                             <img class="img-fluid" src="img/logo_desk.png">
                         </a>
                     </div>
@@ -126,7 +124,6 @@
                                     d="M14.3167 15.7175L14.1337 15.5343L13.9257 15.6887C12.3674 16.8454 10.6328 17.4217 8.71288 17.4217C7.53264 17.4217 6.40599 17.1915 5.3304 16.7311C4.25011 16.2686 3.32369 15.6485 2.54769 14.8718C1.77138 14.0948 1.15181 13.1706 0.689799 12.096C0.230074 11.0267 0 9.89918 0 8.71084C0 7.52249 0.230077 6.3914 0.690057 5.315C1.15205 4.23388 1.77135 3.31034 2.5468 2.54066C3.32289 1.77036 4.24959 1.1533 5.3304 0.690618C6.40599 0.230169 7.53264 0 8.71288 0C9.89311 0 11.0198 0.230169 12.0953 0.690618C13.1762 1.1533 14.1029 1.77036 14.879 2.54066C15.6544 3.31034 16.2737 4.23388 16.7357 5.315C17.1958 6.39161 17.4258 7.51937 17.4258 8.70077C17.4258 10.6364 16.8497 12.3722 15.6949 13.9176L15.5395 14.1256L15.723 14.3092L19.7064 18.2962C19.9059 18.4958 20.0009 18.7253 20.0009 19.0003C20.0009 19.2753 19.9059 19.5048 19.7064 19.7045C19.5069 19.9041 19.2778 19.9991 19.0032 19.9991C18.7287 19.9991 18.4996 19.9041 18.3001 19.7045L14.3167 15.7175ZM8.71288 1.9774C7.49462 1.9774 6.36627 2.27591 5.33366 2.87353C4.3022 3.47048 3.48348 4.29018 2.88074 5.32839C2.27715 6.36804 1.97511 7.49736 1.97511 8.71084C1.97511 9.92431 2.27715 11.0536 2.88074 12.0933C3.48348 13.1315 4.3022 13.9512 5.33366 14.5481C6.36627 15.1458 7.49462 15.4443 8.71288 15.4443C9.93114 15.4443 11.0595 15.1458 12.0921 14.5481C13.1236 13.9512 13.9423 13.1315 14.545 12.0933C15.1486 11.0536 15.4506 9.92431 15.4506 8.71084C15.4506 7.49736 15.1486 6.36804 14.545 5.32839C13.9423 4.29018 13.1236 3.47048 12.0921 2.87353C11.0595 2.27591 9.93114 1.9774 8.71288 1.9774Z"
                                     fill="#C4C4C4" />
                             </svg>
-
                             <input class="w-100" placeholder="Pesquisar produtos...">
                         </div>
                     </div>
@@ -325,7 +322,8 @@
                     <img class="img-fluid" src="img/icon_solicitarorcamento.png">
                     Solicitar Orçamento
                 </a>
-                <a href="login.html" class="btnlateral-entrar w-100 d-flex flex-row justify-content-center align-items-center btn-button">
+                <a href="login.html"
+                    class="btnlateral-entrar w-100 d-flex flex-row justify-content-center align-items-center btn-button">
                     ENTRAR
                 </a>
             </ul>
@@ -342,405 +340,244 @@
     </div>
 
 
-    <div class="container">
-        <dvi class="row">
-            <div class="col-12">
-                <a class="btn-voltar">
-                    < VOLTAR </a>
-            </div>
-            <div class="col-12">
-                <h2 class="caminho">
-                    <a>Pisos</a> | <a>Piso Vinílico</a> | <a>Linha Residencial</a>
-                </h2>
-            </div>
-        </dvi>
-    </div>
 
-    <div class="container">
+    <!--Body-->
+
+
+    <div class="container-fluid header-cadastroDados">
         <div class="row">
-            <div class="col-12">
-                <h2 class="titulo-produto">
-                    Piso Vinílico Y 30 x 30 cm Marca Durafloor Carvalho
-                </h2>
-                <span class="more">
-                    Código: 001 | Mais produtos <a href="">Durafloor</a>
-                </span>
-
-
+            <div class="aviso d-md-flex d-sm-none w-100">
+                Cadastre sua empresa. Acesso imediato às ofertas exclusivas para CNPJ!
             </div>
         </div>
-        <div class="row mb-4">
-            <div class="col-md-2 col-sm-3 col-3 pr-galeria">
-                <div class="galeria">
-                    <div class="pb-2">
-                        <div class="img-galeria" style="background-image: url(img/img-produto.png)"></div>
-                    </div>
-                    <div class="pb-2">
-                        <div class="img-galeria" style="background-image: url(img/img-produto.png)"></div>
-                    </div>
-                    <div class="pb-2">
-                        <div class="img-galeria" style="background-image: url(img/img-produto.png)"></div>
-                    </div>
-                    <div class="pb-2">
-                        <div class="img-galeria" style="background-image: url(img/img-produto.png)"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-9 col-9">
-                <div class="img-principal">
-                    <div>
-                        <img class="img-fluid" src="img/img-produto.png">
-                    </div>
-                    <div>
-                        <img class="img-fluid" src="img/img-produto.png">
-                    </div>
-                    <div>
-                        <img class="img-fluid" src="img/img-produto.png">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 col-sm-12 col-12">
-                <div class="produto-deslogado" style="display: none;">
-                    <a class="veja-detalhesProduto">
-                        Veja detalhes do produto
+        <div class="container content-header d-md-block d-sm-none d-none">
+            <div class="row pt-0 pb-3">
+                <div class="col-md-2 d-flex flex-row justify-content-start align-items-center">
+                    <a href="index.html">
+                        <img class="img-fluid" src="img/logo_desk.png">
                     </a>
-                    <button type="button" class="btnComprar m" tabindex="0">
-                        <svg viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2.25 5.4H2.4V5.25V3.75C2.4 1.76509 4.01509 0.15 6 0.15C7.98491 0.15 9.6 1.76509 9.6 3.75V5.25V5.4H9.75H10.5C11.2444 5.4 11.85 6.00559 11.85 6.75V13.5C11.85 14.2444 11.2444 14.85 10.5 14.85H1.5C0.755593 14.85 0.15 14.2444 0.15 13.5V6.75C0.15 6.00559 0.755593 5.4 1.5 5.4H2.25ZM8.25 5.4H8.4V5.25V3.75C8.4 2.42666 7.32334 1.35 6 1.35C4.67666 1.35 3.6 2.42666 3.6 3.75V5.25V5.4H3.75H8.25ZM10.5015 13.65H10.6515L10.6515 13.5L10.65 6.74997L10.65 6.6H10.5H1.5H1.35V6.75V13.5V13.65H1.5H5.25H5.4V13.5V11.7915V11.7053L5.32557 11.6619C4.9223 11.4267 4.65 10.9951 4.65 10.5C4.65 9.75559 5.25559 9.15 6 9.15C6.74441 9.15 7.35 9.75559 7.35 10.5C7.35 10.9959 7.07774 11.4267 6.67443 11.6619L6.6 11.7053V11.7915V13.5V13.65H6.75H10.5015Z"
-                                fill="#336699" stroke="white" stroke-width="0.3"></path>
-                        </svg>
-                        COMPRAR
-                    </button>
                 </div>
-                <div class="produto-logado">
-                    <div class="header-product">
-                        <a class="veja-detalhesProduto">
-                            Veja detalhes do produto
-                        </a>
-                        <div class="price-product">
-                            <div class="old">
-                                De: <s>R$ 150,00</s>
-                            </div>
-                            <h2 class="new">
-                                Por: R$ 100,00/m²
-                            </h2>
-                            <span>
-                                1 caixa | 3.50 m² = R$350,00
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="body-product">
-                        <div class="quantidade">
-                            <input type="button" id="menos" value='-' onclick="process(-1)" />
-                            <input id="quant" name="quant" class="text" size="1" type="number" value="1"
-                                onkeypress='return SomenteNumero(event)' maxlength="5" />
-                            <input type="button" id="plus" value='+' onclick="process(1)">
-                        </div>
-                        <span class="btn-estoque">
-                            210 m² em estoque
-                        </span>
-                    </div>
-
-                    <div class="footer-product">
-                        <span class="resum-quant">
-                            Você está levando 5 caixas
-                        </span>
-                        <button class="btn-adcCarrinho" type="submit">
-                            Adicionar ao Carrinho
-                        </button>
-                        <a href="finalizar-compra.html" class="btn-compraRapida text-center" type="submit">
-                            COMPRA RÁPIDA
-                        </a>
-                    </div>
-
+                <div class="col-md-10 d-flex flex-column justify-content-center align-items-end">
+                    <ul class="nav-categorias">
+                        <li>
+                            <a>
+                                Nossas Lojas
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Regulamentos
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Sobre Nós
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Fale Conosco
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <section class="list-produto">
-            <div class="row">
-                <div class="titulo-destaque">
-                    <span>
-                        SIMILARES
-                    </span>
-                    <div class="linha"></div>
+
+
+
+
+
+
+        <a href="index.html" class="opc-voltar d-md-none d-sm-flex">
+            <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 2L2 13L13 24" stroke="#336699" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="index.html" class="d-md-none d-sm-flex">
+            <img class="img-fluid" src="img/logo_mobile.png">
+        </a>
+    </div>
+
+    <div class="background-sm-cadastro-dados">
+        <div class="container cadastro">
+            <div class="row hidden-sm">
+                <div class="col-12">
+                    <a href="index.html" class="btn-voltar">
+                        < VOLTAR </a>
                 </div>
-                <div class="position-relative">
-                    <div class="slider-produto">
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto01.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto01.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto02.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto03.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto04.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gradient-product"></div>
-                </div>
-            </div>
-        </section>
-        <div class="row sobre-produto">
-            <div class="col-md-6 col-sm-12">
-                <h2>
-                    Descrição:
-                </h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when
-                    an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <h2>
-                    Ficha técnica:
-                </h2>
-                <div class="parent-tecnica">
-                    <div>
-                        Código
-                    </div>
-
-                    <div>
-                        001
-                    </div>
-
-                    <div>
-                        Marca
-                    </div>
-
-                    <div>
-                        Durafloor
-                    </div>
-                    <div>
-                        Cor
-                    </div>
-                    <div>
-                        Carvalho
-                    </div>
-                    <div>
-                        Medidas (L x P)
-                    </div>
-                    <div>
-                        30 x 30 cm
-                    </div>
-
-                    <div>
-                        Vinílico
-                    </div>
-                    <div>
-                        Material
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <h2>
-                    Arquivos para Download:
-                </h2>
-                <button type="button" class="btnFichaTecnica" tabindex="0">
-                    Ficha Técnica
-                </button>
             </div>
         </div>
-        <section class="list-produto">
-            <div class="row">
-                <div class="titulo-destaque">
-                    <span>
-                        VEJA TAMBÉM
-                    </span>
-                    <div class="linha"></div>
-                </div>
-                <div class="position-relative">
-                    <div class="slider-produto">
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto01.png);">
+
+        <div class="pagamento">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h2 class="opc-pagamentoTitulo">
+                            Opções de pagamento:
+                        </h2>
+
+                        <div class="accordion" id="accordionCartao-credito">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCartao-credito">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCartao-credito" aria-expanded="false"
+                                        aria-controls="collapseCartao-credito">
+
+                                        <div class="marcador">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="15" cy="15" r="14" stroke="#336699" stroke-width="2" />
+                                                <circle cx="15" cy="15" r="9" fill="white" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="titulo">
+                                            <svg width="35" height="26" viewBox="0 0 35 26" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 4.33333C0 3.18406 0.460936 2.08186 1.28141 1.2692C2.10188 0.456546 3.21468 0 4.375 0H30.625C31.7853 0 32.8981 0.456546 33.7186 1.2692C34.5391 2.08186 35 3.18406 35 4.33333V21.6667C35 22.8159 34.5391 23.9181 33.7186 24.7308C32.8981 25.5435 31.7853 26 30.625 26H4.375C3.21468 26 2.10188 25.5435 1.28141 24.7308C0.460936 23.9181 0 22.8159 0 21.6667V4.33333ZM4.375 2.16667C3.79484 2.16667 3.23844 2.39494 2.8282 2.80127C2.41797 3.2076 2.1875 3.7587 2.1875 4.33333V6.5H32.8125V4.33333C32.8125 3.7587 32.582 3.2076 32.1718 2.80127C31.7616 2.39494 31.2052 2.16667 30.625 2.16667H4.375ZM32.8125 10.8333H2.1875V21.6667C2.1875 22.2413 2.41797 22.7924 2.8282 23.1987C3.23844 23.6051 3.79484 23.8333 4.375 23.8333H30.625C31.2052 23.8333 31.7616 23.6051 32.1718 23.1987C32.582 22.7924 32.8125 22.2413 32.8125 21.6667V10.8333Z"
+                                                    fill="#336699" />
+                                                <path
+                                                    d="M4.375 17.3334C4.375 16.7588 4.60547 16.2077 5.0157 15.8014C5.42594 15.395 5.98234 15.1667 6.5625 15.1667H8.75C9.33016 15.1667 9.88656 15.395 10.2968 15.8014C10.707 16.2077 10.9375 16.7588 10.9375 17.3334V19.5001C10.9375 20.0747 10.707 20.6258 10.2968 21.0321C9.88656 21.4385 9.33016 21.6667 8.75 21.6667H6.5625C5.98234 21.6667 5.42594 21.4385 5.0157 21.0321C4.60547 20.6258 4.375 20.0747 4.375 19.5001V17.3334Z"
+                                                    fill="#336699" />
+                                            </svg>
+                                            Cartão de Crédito
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseCartao-credito" class="accordion-collapse collapse"
+                                    aria-labelledby="headingCartao-credito" data-bs-parent="#accordionCartao-credito">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingBoleto-bancario">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseBoleto-bancario" aria-expanded="false"
+                                        aria-controls="collapseBoleto-bancario">
+
+                                        <div class="marcador">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="15" cy="15" r="14" stroke="#336699" stroke-width="2" />
+                                                <circle cx="15" cy="15" r="9" fill="white" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="titulo">
+                                            <svg width="35" height="26" viewBox="0 0 35 26" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 0H2.93945V21.6836H0V0ZM11.6895 21.6836V0H5.81055V21.6836H11.6895ZM14.5605 0H17.5V21.6836H14.5605V0ZM20.4395 0H23.3105V21.6836H20.4395V0ZM0 23.8164H35V26H0V23.8164ZM32.0605 0H29.1895V21.6836H35V0H32.0605Z"
+                                                    fill="white" />
+                                            </svg>
+
+                                            Boleto Bancário
+                                        </div>
+
+
+                                    </button>
+                                </h2>
+                                <div id="collapseBoleto-bancario" class="accordion-collapse collapse"
+                                    aria-labelledby="headingBoleto-bancario" data-bs-parent="#accordionCartao-credito">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto01.png);">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingPix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsePix" aria-expanded="false" aria-controls="collapsePix">
+
+                                        <div class="marcador">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="15" cy="15" r="14" stroke="#336699" stroke-width="2" />
+                                                <circle cx="15" cy="15" r="9" fill="white" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="titulo">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.7925 19.0098C14.9216 18.9967 15.0254 18.9545 15.0426 18.8087C15.3098 18.5916 15.5276 18.3212 15.8543 18.1664C16.181 18.0116 16.4441 18.0277 16.7103 18.2549C17.3718 18.8208 17.9354 19.4842 18.5687 20.0793C18.9952 20.4814 19.3995 20.9046 19.8149 21.3168C20.3564 21.8535 20.9241 22.3672 21.4393 22.9251C21.874 23.4127 22.4038 23.8067 22.9963 24.0833C23.5889 24.3598 24.2318 24.513 24.8858 24.5334C25.032 24.5405 25.2508 24.447 25.3103 24.6058C25.3698 24.7646 25.16 24.8752 25.0622 25.0029C25.0501 25.02 25.0239 25.025 25.0078 25.0411C24.2428 25.805 23.4775 26.57 22.7118 27.336C22.1835 27.8637 21.6561 28.3935 21.1197 28.9142C20.5833 29.4349 20.0529 29.9998 19.4973 30.5225C19.2164 30.7995 18.9095 31.0489 18.5808 31.2674C18.0373 31.6102 17.4293 31.7629 16.8081 31.9178C16.1023 32.0937 15.4388 31.9811 14.7673 31.8082C14.4487 31.7268 14.1341 31.6333 13.8175 31.5458L13.8054 31.5398C13.7822 31.379 13.6219 31.3317 13.521 31.2975C13.1691 31.1739 12.9221 30.9045 12.6861 30.6632C12.2697 30.238 11.816 29.852 11.4036 29.4208C10.6887 28.6729 9.92133 27.9763 9.18526 27.2505C8.59035 26.6665 8.0025 26.0724 7.41566 25.4793C7.12829 25.1878 6.80261 24.9295 6.55859 24.5596C7.14745 24.4872 7.69396 24.5495 8.24551 24.439C8.99875 24.3015 9.70713 23.9834 10.3095 23.5121C11.0658 22.909 11.702 22.1762 12.3907 21.5017C13.0794 20.8272 13.7923 20.1286 14.489 19.438C14.61 19.3083 14.7542 19.1998 14.7925 19.0098Z"
+                                                    fill="#336699" />
+                                                <path
+                                                    d="M4.05877 9.86117C4.37841 9.69732 4.58309 9.40179 4.83114 9.15752C4.99348 8.9987 5.13364 8.90924 5.37362 8.91426C6.11977 8.93236 6.86694 8.91426 7.61208 8.92834C8.51957 8.95045 9.2143 9.39073 9.83744 10.022C10.4606 10.6533 11.0353 11.2856 11.6907 11.8615C12.446 12.525 13.1548 13.2377 13.8657 13.9484C14.3154 14.3977 14.7278 14.8933 15.3227 15.1898C15.7167 15.3808 16.16 15.4467 16.5928 15.3786C17.0255 15.3104 17.4269 15.1116 17.7427 14.8088C18.7258 13.8881 19.6585 12.907 20.6083 11.956C21.3595 11.2082 22.0905 10.4352 22.8831 9.73251C23.4613 9.19897 24.225 8.91058 25.0126 8.92834C25.5914 8.94241 26.1712 8.93437 26.75 8.9213C26.8213 8.91987 26.892 8.93438 26.9569 8.96378C27.0218 8.99318 27.0793 9.03671 27.1251 9.09118C27.8309 9.8079 28.5115 10.5477 29.2526 11.2242C29.8022 11.7269 30.2972 12.2787 30.8014 12.8175C31.4618 13.5212 31.8208 14.4067 31.9519 15.3707C32.0716 16.2852 31.9363 17.2149 31.5607 18.0577C31.2582 18.7613 30.7338 19.3021 30.2146 19.8419C29.8112 20.2641 29.3837 20.6712 28.9653 21.0824C28.3189 21.7187 27.6544 22.3369 27.0494 23.0164C27.0075 23.0597 26.9558 23.0924 26.8986 23.1118C26.8415 23.1312 26.7805 23.1367 26.7207 23.128C26.2751 23.128 25.8284 23.1421 25.3837 23.1199C24.2746 23.0667 23.2955 22.7711 22.4888 21.9237C21.663 21.0552 20.8049 20.2149 19.9327 19.3876C19.4931 18.9714 19.1019 18.498 18.6572 18.0808C18.2125 17.6636 17.8314 17.146 17.2325 16.8745C16.5639 16.573 15.9216 16.5871 15.2531 16.8363C14.7822 17.0133 14.4747 17.3902 14.1359 17.733C13.5743 18.303 13.0046 18.8639 12.4389 19.4308C12.0194 19.851 11.6111 20.2822 11.1835 20.6934C10.506 21.3457 9.90097 22.0836 9.11246 22.6083C8.81716 22.796 8.49182 22.932 8.15053 23.0104C7.22892 23.2406 6.29623 23.0687 5.3716 23.132C5.30019 23.1362 5.22879 23.1236 5.16313 23.0954C5.09747 23.0671 5.03936 23.0239 4.99348 22.9692C3.92063 21.9217 2.85786 20.8652 1.77291 19.8319C0.687958 18.7985 -0.0118153 17.5561 0.000284522 16.0392C-0.00758251 15.3175 0.147786 14.6033 0.454845 13.9496C0.761904 13.296 1.21276 12.7197 1.77392 12.2636C2.31034 11.8113 2.76711 11.2655 3.2632 10.7639C3.48604 10.5377 3.71695 10.3196 3.9418 10.0954C3.97573 10.0665 4.00335 10.031 4.02295 9.99108C4.04255 9.95114 4.05371 9.90761 4.05574 9.86319L4.05877 9.86117Z"
+                                                    fill="#336699" />
+                                                <path
+                                                    d="M11.5487 2.39851C11.8805 2.23566 12.1134 1.94315 12.3554 1.68682C12.7985 1.19804 13.3236 0.789867 13.9072 0.480558C14.3205 0.285726 14.7595 0.150347 15.2109 0.0784722C15.7474 -0.0180194 16.2969 -0.0180194 16.8333 0.0784722C17.3172 0.160141 17.787 0.309729 18.2288 0.522777C18.9639 0.879628 19.5134 1.46768 20.07 2.04467C20.9473 2.95741 21.8608 3.83596 22.7491 4.73764C23.579 5.58102 24.4411 6.39222 25.2598 7.25068C25.4091 7.40548 25.4111 7.48891 25.1751 7.50399C24.9977 7.51404 24.8192 7.53917 24.6428 7.53214C24.1457 7.51103 23.709 7.71911 23.2533 7.86486C22.2813 8.17447 21.646 8.91933 20.9573 9.59584C20.1709 10.3689 19.3965 11.1529 18.617 11.933C18.0715 12.4808 17.5452 13.0498 16.9775 13.5735C16.4098 14.0972 16.0811 14.1615 15.5003 13.6097C14.6281 12.7824 13.8033 11.9008 12.9513 11.0544C12.0993 10.208 11.2714 9.36364 10.4083 8.54439C9.93138 8.09104 9.31026 7.87994 8.69922 7.66382C8.17388 7.47786 7.63242 7.51706 7.09297 7.51103C7.02533 7.51127 6.95781 7.50521 6.8913 7.49293C6.81971 7.47786 6.71081 7.51103 6.68964 7.42357C6.65838 7.31702 6.75518 7.24465 6.82374 7.17629C7.22707 6.77421 7.63275 6.37011 8.04079 5.964C8.79904 5.21512 9.58755 4.49538 10.3065 3.71132C10.7098 3.26701 11.2432 2.9373 11.5487 2.40454V2.39851Z"
+                                                    fill="#336699" />
+                                            </svg>
+
+
+                                            PIX
+                                        </div>
+
+
+                                    </button>
+                                </h2>
+                                <div id="collapsePix" class="accordion-collapse collapse" aria-labelledby="headingPix"
+                                    data-bs-parent="#accordionCartao-credito">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto02.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto03.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
-                        <a class="produto-categoria">
-                            <div class="box-img" style="background-image: url(img/produto04.png);">
-                            </div>
-                            <div class="box d-flex flex-column justify-content-center align-items-start">
-                                <p class="nomeProduto">
-                                    Piso Vinílico Y 30 x 30 cm...
-                                </p>
-                                <span class="categoria">
-                                    Durafloor
-                                </span>
-                                <span class="old-price">
-                                    De: <s>R$ 150,00</s>
-                                </span>
-                                <span class="new-price">
-                                    Por: R$ 100,00
-                                </span>
-                            </div>
-                        </a>
+                        </div>
+
+
                     </div>
-                    <div class="gradient-product"></div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
 
+    <script>
+        $('input.retirada').click(function () {
+            $('input.retirada').prop('checked', false);
+            $(this).prop('checked', true);
+        });
+
+        $('input.entrega').click(function () {
+            $('input.entrega').prop('checked', false);
+            $(this).prop('checked', true);
+        });
+    </script>
+    <style>
+        header {
+            display: none;
+        }
+    </style>
 
 
-
-
-
+    <!--Fim Body-->
 
 
     <div class="background-slider"></div>
@@ -776,8 +613,10 @@
                                 <div class="contact-text">
                                     A HOMETECK
 
-                                    Desde 2000 sendo referência em grandes obras, a Hometeck oferece produtos cada vez
-                                    mais inovadores e serviços de alta qualidade, sempre com honestidade, criatividade e
+                                    Desde 2000 sendo referência em grandes obras, a Hometeck oferece produtos cada
+                                    vez
+                                    mais inovadores e serviços de alta qualidade, sempre com honestidade,
+                                    criatividade e
                                     o máximo de excelência.
                                 </div>
                             </li>
@@ -834,7 +673,7 @@
                                 Sábado:<br>
                                 07h30 às 14h.
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -849,29 +688,6 @@
             </div>
         </div>
     </footer>
-
-
-    <script>
-
-        function process(quant) {
-            var value = parseInt(document.getElementById("quant").value);
-            value += quant;
-            if (value < 1) {
-                document.getElementById("quant").value = 1;
-            } else {
-                document.getElementById("quant").value = value;
-            }
-        }
-
-        function SomenteNumero(e) {
-            var tecla = (window.event) ? event.keyCode : e.which;
-            if ((tecla > 47 && tecla < 58)) return true;
-            else {
-                if (tecla == 8 || tecla == 0) return true;
-                else return false;
-            }
-        }
-    </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="src/js/slick.min.js"></script>

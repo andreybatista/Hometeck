@@ -55,6 +55,177 @@
 /*FONTS DESKTOP*/
 
 @media(min-width: 768px) {
+    .pagamento #accordionCartao-credito button.accordion-button .titulo svg {
+        margin-right: 20px;
+        width: 35px;
+        height: 26px;
+    }
+    .pagamento #accordionCartao-credito button.accordion-button .marcador {
+        margin-right: 27px;
+    }
+    .pagamento #accordionCartao-credito button.accordion-button .titulo {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #accordionCartao-credito .accordion-item {
+        margin-bottom: 20px;
+    }
+    .opc-pagamentoTitulo {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .finalizar-compra .box-retirada .option {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .finalizar-compra .box-retirada {
+        margin-bottom: 40px;
+    }
+    .box-retirada .option label {
+        box-shadow: none;
+    }
+    .finalizar-compra .box-retirada input[type=checkbox]:checked:after {
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        border-width: 0 0 0 0;
+        background: #fff;
+        transform: unset;
+        transform: translate(-50%, -50%);
+    }
+    .finalizar-compra .box-retirada input[type=checkbox]:before {
+        width: 26px;
+        height: 26px;
+        top: -7px;
+        left: -6px;
+    }
+    .finalizar-compra .box-retirada input[type=checkbox]:checked:before {
+        width: 26px;
+        height: 26px;
+        top: -6px;
+        left: -6px;
+    }
+    .finalizar-compra .box-retirada span {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .finalizar-compra .box-retirada p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .finalizar-compra .box-retirada h2 {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0 13px 0;
+    }
+    .finalizar-compra .box-retirada h3 {
+        padding: 0 0 7px 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .finalizar-compra .box-retirada input[type=checkbox] {
+        left: 28px;
+    }
+    .box-retirada .option label {
+        padding: 20px 27px 20px 57px;
+    }
+    .finalizar-compra,
+    .pagamento {
+        width: 620px;
+        margin: 0 auto;
+    }
+    .finalizar-compra .parent-product .tab-3 strong {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .finalizar-compra .parent-product .tab-3 span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .finalizar-compra .parent-product .tab-2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .finalizar-compra h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding-bottom: 20px;
+    }
+    .finalizar-compra .dados-comprador {
+        margin-top: 40px;
+    }
+    .carrinho .box-imgCart {
+        padding: 0 5px;
+    }
+    .breadcrumb p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 20px 0;
+    }
+    .footer-carrinho .titulo .total, .footer-carrinho .titulo #total {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .footer-carrinho .btn-comprar {
+        font-weight: 500;
+        font-weight: 200;
+    }
+    .footer-carrinho .titulo {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-carrinho {
+        width: 460px;
+        background: var(--branco);
+        box-shadow: unset;
+    }
+    .carrinho .total {
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--azul);
+    }
+    .carrinho p.col-quant-carrinho {
+        font-weight: 500;
+    }
+    .minha-conta .tab-content .style {
+        padding: 20px 80px;
+    }
+    .carrinho .price-product span {
+        font-weight: 500;
+    }
+    .carrinho .price-product .new {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .carrinho .price-product .old {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .carrinho .item-cart {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .carrinho .item-cart::before {
+        width: 100%;
+    }
+    .inCart {
+        margin-top: -25px;
+        margin-left: -9px;
+    }
+    .inCart span {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+    }
     .voltar-btn {
         font-size: 16px;
         line-height: 24px;
@@ -129,18 +300,32 @@
         line-height: 24px;
         margin: 20px 0 0 0;
     }
+    .minha-conta .tab-dados .fist-p-meus-dados {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 0 0;
+        color: var(--cinza-escuro);
+    }
+    .minha-conta .tab-dados .p-meus-dados {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 0 0;
+        color: var(--cinza-escuro);
+    }
     .cadastro-dados .tituloDados {
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         margin-bottom: 20px;
     }
-    .cadastro-dados .parent-dados .subTitulo {
+    .cadastro-dados .parent-dados .subTitulo, .cadastro-dados .parent-dados2 .subTitulo {
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
     }
-    .cadastro-dados .parent-dados div {
+    .cadastro-dados .parent-dados div, .cadastro-dados .parent-dados2 div {
         font-size: 16px;
         line-height: 24px;
         text-align: right;
@@ -149,7 +334,7 @@
         padding-bottom: 20px;
         margin-top: 10px;
     }
-    .cadastro-dados .parent-dados div.desc {
+    .cadastro-dados .parent-dados div.desc, .cadastro-dados .parent-dados2 div.desc {
         margin-bottom: 0;
     }
     .cadastro-dados .tab-dados {
@@ -159,6 +344,13 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .parent-dados2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
@@ -682,9 +874,39 @@
 }
 
 @media(max-width: 991px) {
+    .finalizar-compra {
+        width: 100%;
+    }
+    .carrinho .item-cart {
+        width: 100%;
+    }
+    .minha-conta .cadastro-dados .tab-dados {
+        padding: 20px 50px;
+    }
     ul.nav-categorias li a {
         font-size: 12px;
         padding: 10px 9px;
+    }
+    .parent-dados, .parent-dados2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .cadastro-dados .parent-dados .subTitulo, .cadastro-dados .parent-dados2 .subTitulo {
+        border: none;
+        padding: 0;
+    }
+    .cadastro-dados .parent-dados div.desc, .cadastro-dados .parent-dados2 div.desc {
+        border: none;
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 324px) {
+    .carrinho .total {
+        font-size: 15px;
+        line-height: 23px;
     }
 }
 

@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="http://localhost/hometeck/src/css/style.css">
     <link rel="stylesheet" href="src/css/mediaquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
     <link rel="stylesheet" type="text/css" href="src/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="src/css/slick-theme.css" />
+
 </head>
 
 <body>
@@ -56,8 +60,13 @@
                             <img class="img-fluid" src="img/logo_mobile.png">
                         </a>
                     </div>
-                    <div class="col-4 d-flex flex-row justify-content-end">
-                        <a href="">
+                    <div class="col-4">
+                        <a href="" class="d-flex flex-row justify-content-end">
+                            <div class="inCart on">
+                                <span>
+                                    21,5
+                                </span>
+                            </div>
                             <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M28.8162 19.8503H8.90202L9.90191 17.7365L26.5154 17.7052C27.0772 17.7052 27.5588 17.2887 27.6591 16.7125L29.9599 3.34598C30.0201 2.99541 29.9298 2.63444 29.7091 2.36023C29.6 2.22528 29.4639 2.11658 29.3103 2.04166C29.1567 1.96674 28.9892 1.9274 28.8195 1.92637L7.68476 1.85348L7.50418 0.971861C7.39048 0.40957 6.90224 0 6.34712 0H1.18047C0.86739 0 0.567133 0.129087 0.345752 0.358864C0.124371 0.588641 0 0.900285 0 1.22524C0 1.55019 0.124371 1.86184 0.345752 2.09161C0.567133 2.32139 0.86739 2.45048 1.18047 2.45048H5.3907L6.17991 6.34486L8.12284 16.1086L5.62145 20.3466C5.49155 20.5286 5.4133 20.7446 5.39558 20.9704C5.37785 21.1961 5.42134 21.4225 5.52112 21.6239C5.72177 22.0369 6.12641 22.2973 6.57452 22.2973H8.67462C8.2269 22.9145 7.98508 23.6662 7.98573 24.4388C7.98573 26.4034 9.52402 28 11.4168 28C13.3096 28 14.8478 26.4034 14.8478 24.4388C14.8478 23.6648 14.6004 22.9116 14.159 22.2973H19.5463C19.0986 22.9145 18.8568 23.6662 18.8574 24.4388C18.8574 26.4034 20.3957 28 22.2885 28C24.1813 28 25.7195 26.4034 25.7195 24.4388C25.7195 23.6648 25.4721 22.9116 25.0307 22.2973H28.8195C29.4683 22.2973 30 21.7489 30 21.072C29.9981 20.7474 29.8725 20.4368 29.6507 20.2079C29.4289 19.979 29.1289 19.8504 28.8162 19.8503ZM8.17635 4.26925L27.4317 4.33519L25.5456 15.2964L10.4202 15.3242L8.17635 4.26925ZM11.4168 25.5356C10.8349 25.5356 10.36 25.0428 10.36 24.4388C10.36 23.8349 10.8349 23.342 11.4168 23.342C11.9987 23.342 12.4735 23.8349 12.4735 24.4388C12.4735 24.7297 12.3622 25.0087 12.164 25.2144C11.9658 25.4201 11.6971 25.5356 11.4168 25.5356ZM22.2885 25.5356C21.7066 25.5356 21.2317 25.0428 21.2317 24.4388C21.2317 23.8349 21.7066 23.342 22.2885 23.342C22.8704 23.342 23.3452 23.8349 23.3452 24.4388C23.3452 24.7297 23.2339 25.0087 23.0357 25.2144C22.8375 25.4201 22.5688 25.5356 22.2885 25.5356Z" fill="#336699" />
                             </svg>
@@ -148,7 +157,7 @@
 
                     </div>
                     <div class="col-md-1 d-flex flex-row justify-content-end align-items-center">
-                        <a class="box-cart position-relative">
+                        <a href="carrinho.html" class="box-cart position-relative">
                             <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25.8909 29.7142C25.4035 30.4789 25.1425 31.3754 25.1432 32.2942L25.8909 29.7142ZM25.8909 29.7142H26.0618V29.4642L25.86 29.3166C25.8244 29.3652 25.7898 29.4144 25.756 29.4642H19.1835C19.1502 29.4147 19.116 29.3658 19.081 29.3175L18.8786 29.4642V29.7142H19.048C19.5301 30.4763 19.7971 31.3741 19.7971 32.2942C19.7971 34.8902 17.7461 37 15.2224 37C12.6987 37 10.6476 34.8902 10.6476 32.2942L25.8909 29.7142ZM11.6437 26.123L11.473 26.4807H11.8694H38.4214C38.7701 26.4809 39.1061 26.6229 39.3555 26.878C39.6051 27.1333 39.7476 27.4811 39.75 27.846C39.7496 28.6082 39.1466 29.2142 38.426 29.2142H33.3742H32.8842L33.1718 29.611C33.7298 30.3807 34.0427 31.3247 34.0427 32.2942C34.0427 34.7588 32.097 36.75 29.718 36.75C27.339 36.75 25.3932 34.7588 25.3932 32.2942V32.2939C25.3924 31.3256 25.6983 30.3841 26.2635 29.6119L26.5545 29.2142H26.0618H18.8786H18.3886L18.6762 29.611C19.2342 30.3807 19.5471 31.3247 19.5471 32.2942C19.5471 34.7588 17.6014 36.75 15.2224 36.75C12.8434 36.75 10.8976 34.7588 10.8976 32.2942V32.2939C10.8968 31.3256 11.2027 30.3841 11.7679 29.6119L12.0589 29.2142H11.5662H8.76602C8.26707 29.2142 7.81291 28.9274 7.58599 28.4644L7.58511 28.4627C7.47253 28.2374 7.42325 27.9838 7.44332 27.7306C7.46338 27.4774 7.55191 27.2357 7.69812 27.0327L7.70449 27.0239L7.71006 27.0145L11.0452 21.4143L11.0945 21.3315L11.0756 21.2371L8.48499 8.33507L8.48482 8.3342L7.43254 3.18805L7.39166 2.98813H7.1876H1.57396C1.22514 2.98813 0.889129 2.84566 0.640258 2.58966C0.391155 2.33341 0.25 1.98441 0.25 1.61907C0.25 1.25372 0.391155 0.904717 0.640258 0.648475C0.889129 0.392473 1.22514 0.25 1.57396 0.25H8.46283C9.08022 0.25 9.63197 0.703677 9.76062 1.33422L9.76075 1.33484L10.0015 2.49984L10.0426 2.69854L10.2455 2.69924L38.4245 2.79555C38.4246 2.79555 38.4247 2.79555 38.4248 2.79555C38.6136 2.79674 38.8002 2.84013 38.9716 2.92299C39.143 3.00584 39.2954 3.1263 39.418 3.27649C39.6656 3.58132 39.7684 3.98489 39.7002 4.37879L36.6326 22.0412C36.6326 22.0413 36.6326 22.0414 36.6325 22.0415C36.5188 22.6881 35.9766 23.1462 35.3539 23.1462H35.3535L13.2021 23.1875L13.0447 23.1878L12.9769 23.3298L11.6437 26.123ZM10.9026 5.3915L10.5952 5.39046L10.6569 5.69166L13.6487 20.2999L13.6897 20.5002L13.8941 20.4998L34.0613 20.4631L34.2713 20.4627L34.3072 20.2559L36.822 5.77141L36.8726 5.47965L36.5765 5.47865L10.9026 5.3915ZM13.5634 32.2942C13.5634 33.2236 14.3019 33.9935 15.2224 33.9935C15.6647 33.9935 16.0874 33.8127 16.3979 33.4933C16.7083 33.1741 16.8814 32.7426 16.8814 32.2942C16.8814 31.3647 16.1429 30.5948 15.2224 30.5948C14.3019 30.5948 13.5634 31.3647 13.5634 32.2942ZM28.059 32.2942C28.059 33.2236 28.7975 33.9935 29.718 33.9935C30.1603 33.9935 30.583 33.8127 30.8935 33.4933C31.2038 33.1741 31.377 32.7426 31.377 32.2942C31.377 31.3647 30.6385 30.5948 29.718 30.5948C28.7975 30.5948 28.059 31.3647 28.059 32.2942Z" fill="#336699" stroke="white" stroke-width="0.5" />
                             </svg>
@@ -296,69 +305,162 @@
             <h2>
                 Meu Acesso
             </h2>
-            <div class="accordion-menu">
+
+            <div class="accordion accordion-menu accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ultimoPedido" aria-expanded="false" aria-controls="collapse-ultimoPedido">
-                        <div class="box-iconMenu ultimo-pedido">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="7" cy="7" r="6.5" stroke="white" />
-                            </svg>
-                            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.5 3L3.5 5.5L8 1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        Último Pedido
-                    </button>
-                    <div id="collapse-ultimoPedido" class="accordion-collapse collapse" aria-labelledby="heading-ultimoPedido" data-bs-parent="#accordionExample">
+                    <h2 class="accordion-header" id="collapseheader-ultimoPedido">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ultimoPedido" aria-expanded="false" aria-controls="collapse-ultimoPedido">
+                            <div class="box-iconMenu ultimo-pedido">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7" cy="7" r="6.5" stroke="#336699" />
+                                    <path d="M3.5 7L6.5 9.5L11 5" stroke="#336699" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            Último Pedido
+                        </button>
+                    </h2>
+                    <div id="collapse-ultimoPedido" class="accordion-collapse collapse" aria-labelledby="collapse-ultimoPedido" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
                         </div>
                     </div>
                 </div>
+
                 <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-pedidos" aria-expanded="false" aria-controls="collapse-pedidos">
-                        <div class="box-iconMenu meus-dados">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 1C4.6632 1 1 4.6632 1 9C1 11.5512 2.2736 13.8624 4.2 15.3392V15.4H4.2816C5.616 16.396 7.2504 17 9 17C10.7496 17 12.384 16.396 13.7184 15.4H13.8V15.3392C15.7264 13.8624 17 11.552 17 9C17 4.6632 13.3368 1 9 1ZM5.8592 14.5416C5.97709 14.0083 6.27323 13.5311 6.69877 13.1888C7.12432 12.8464 7.65384 12.6594 8.2 12.6584H9.8C10.3461 12.6595 10.8756 12.8466 11.3011 13.189C11.7266 13.5313 12.0228 14.0084 12.1408 14.5416C11.2064 15.0832 10.1328 15.4 9 15.4C7.8672 15.4 6.7936 15.0832 5.8592 14.5416ZM13.488 13.5128C13.1828 12.7863 12.6702 12.1659 12.0142 11.7294C11.3582 11.2928 10.588 11.0594 9.8 11.0584H8.2C7.41201 11.0594 6.64181 11.2928 5.98581 11.7294C5.32982 12.1659 4.81716 12.7863 4.512 13.5128C3.3384 12.3456 2.6 10.7408 2.6 9C2.6 5.5304 5.5304 2.6 9 2.6C12.4696 2.6 15.4 5.5304 15.4 9C15.4 10.7408 14.6616 12.3456 13.488 13.5128Z" fill="white" stroke="#336699" stroke-width="0.7" />
-                            </svg>
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 1C2.29 1 1 2.29 1 4C1 5.71 2.29 7 4 7C5.71 7 7 5.71 7 4C7 2.29 5.71 1 4 1ZM4 5.5C3.1165 5.5 2.5 4.8835 2.5 4C2.5 3.1165 3.1165 2.5 4 2.5C4.8835 2.5 5.5 3.1165 5.5 4C5.5 4.8835 4.8835 5.5 4 5.5Z" fill="white" stroke="#336699" stroke-width="0.6" />
-                            </svg>
-                        </div>
-                        Meus Dados
-                    </button>
-                    <div id="collapse-pedidos" class="accordion-collapse collapse" aria-labelledby="heading-pedidos" data-bs-parent="#accordionExample">
+                    <h2 class="accordion-header" id="collapseheader-pedidos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-pedidos" aria-expanded="false" aria-controls="collapse-pedidos">
+                            <div class="box-iconMenu meus-dados">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1C4.6632 1 1 4.6632 1 9C1 11.5512 2.2736 13.8624 4.2 15.3392V15.4H4.2816C5.616 16.396 7.2504 17 9 17C10.7496 17 12.384 16.396 13.7184 15.4H13.8V15.3392C15.7264 13.8624 17 11.552 17 9C17 4.6632 13.3368 1 9 1ZM5.8592 14.5416C5.97709 14.0083 6.27323 13.5311 6.69877 13.1888C7.12432 12.8464 7.65384 12.6594 8.2 12.6584H9.8C10.3461 12.6595 10.8756 12.8466 11.3011 13.189C11.7266 13.5313 12.0228 14.0084 12.1408 14.5416C11.2064 15.0832 10.1328 15.4 9 15.4C7.8672 15.4 6.7936 15.0832 5.8592 14.5416ZM13.488 13.5128C13.1828 12.7863 12.6702 12.1659 12.0142 11.7294C11.3582 11.2928 10.588 11.0594 9.8 11.0584H8.2C7.41201 11.0594 6.64181 11.2928 5.98581 11.7294C5.32982 12.1659 4.81716 12.7863 4.512 13.5128C3.3384 12.3456 2.6 10.7408 2.6 9C2.6 5.5304 5.5304 2.6 9 2.6C12.4696 2.6 15.4 5.5304 15.4 9C15.4 10.7408 14.6616 12.3456 13.488 13.5128Z" fill="#336699" stroke="white" stroke-width="0.7" />
+                                    <path d="M9 5C7.29 5 6 6.29 6 8C6 9.71 7.29 11 9 11C10.71 11 12 9.71 12 8C12 6.29 10.71 5 9 5ZM9 9.5C8.1165 9.5 7.5 8.8835 7.5 8C7.5 7.1165 8.1165 6.5 9 6.5C9.8835 6.5 10.5 7.1165 10.5 8C10.5 8.8835 9.8835 9.5 9 9.5Z" fill="#336699" stroke="white" stroke-width="0.6" />
+                                </svg>
+                            </div>
+
+                            Meus Dados
+                        </button>
+                    </h2>
+                    <div id="collapse-pedidos" class="accordion-collapse collapse" aria-labelledby="collapse-pedidos" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <div class="parent-dados">
+                                <div class="subTitulo">
+                                    Razão Social:
+                                </div>
+                                <div class="desc">
+                                    Empresa De Tal LTDA.
+                                </div>
+                                <div class="subTitulo">
+                                    Nome Fantasia:
+                                </div>
+                                <div class="desc">
+                                    Empresa Tal
+                                </div>
+                                <div class="subTitulo">
+                                    CNPJ:
+                                </div>
+                                <div class="desc">
+                                    XX.XXX.XXX/XXXX-XX
+                                </div>
+                                <div class="subTitulo">
+                                    Inscrição Estadual:
+                                </div>
+                                <div class="desc">
+                                    XXXXXXXXX
+                                </div>
+                                <div class="subTitulo">
+                                    Endereço da Empresa:
+                                </div>
+                                <div class="desc">
+                                    Brasília, DF - 70333-333
+                                </div>
+                            </div>
+                            <p>
+                                Dados extraídos do <i>SINTEGRA.</i>
+                            </p>
                         </div>
+
+                        <div class="accordion-body mt-3">
+                            <div class="parent-dados">
+                                <div class="subTitulo">
+                                    Nome do Comprador:
+                                </div>
+                                <div class="desc">
+                                    Fulano de Tal
+                                </div>
+                                <div class="subTitulo">
+                                    Telefone:
+                                </div>
+                                <div class="desc">
+                                    (XX) XXXX-XXXX
+                                </div>
+                                <div class="subTitulo">
+                                    E-mail:
+                                </div>
+                                <div class="desc">
+                                    xxxxx@xxxx.com.br
+                                </div>
+                            </div>
+                            <p>
+                                <strong>Atenção!</strong> <br>
+                                Para alteração de dados de contato, por gentileza, fale com a nossa <strong>Central de Atendimento</strong> pelo WhatsApp XX XXXX-XXXX.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
+
                 <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-boletos" aria-expanded="false" aria-controls="collapse-boletos">
-                        <div class="box-iconMenu">
-                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.5 0.5H0.675781V9.50781H0.5V0.5ZM2.82422 0.5H4.17578V9.50781H2.82422V0.5ZM6.32422 0.5H6.5V9.50781H6.32422V0.5ZM8.67578 0.5H8.82422V9.50781H8.67578V0.5ZM13.5 11.4922V11.5H0.5V11.4922H13.5ZM12.1758 9.50781V0.5H12.8242H13.5V9.50781H12.1758Z" fill="#336699" stroke="#336699" />
-                            </svg>
-                        </div>
-                        Meus boletos
-                    </button>
-                    <div id="collapse-boletos" class="accordion-collapse collapse" aria-labelledby="heading-boletos" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
+                    <h2 class="accordion-header" id="collapseheader-trocar-senha">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-trocar-senha" aria-expanded="false" aria-controls="collapse-trocar-senha">
+                            <div class="box-iconMenu trocar-senha">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.375 3.5C11.375 3.73206 11.2828 3.95462 11.1187 4.11872C10.9546 4.28281 10.7321 4.375 10.5 4.375C10.2679 4.375 10.0454 4.28281 9.88128 4.11872C9.71719 3.95462 9.625 3.73206 9.625 3.5C9.625 3.26794 9.71719 3.04538 9.88128 2.88128C10.0454 2.71719 10.2679 2.625 10.5 2.625C10.7321 2.625 10.9546 2.71719 11.1187 2.88128C11.2828 3.04538 11.375 3.26794 11.375 3.5Z" fill="#336699" />
+                                    <path d="M9.1875 0C6.496 0 4.375 2.121 4.375 4.8125C4.375 5.15988 4.41 5.509 4.48175 5.84063C4.5325 6.07688 4.47475 6.28162 4.3575 6.39887L0.385 10.3714C0.262879 10.4933 0.166014 10.6382 0.0999507 10.7977C0.033887 10.9571 -7.80994e-05 11.128 1.34844e-07 11.3006V12.6875C1.34844e-07 13.0356 0.138281 13.3694 0.384423 13.6156C0.630564 13.8617 0.964403 14 1.3125 14H3.0625C3.4106 14 3.74444 13.8617 3.99058 13.6156C4.23672 13.3694 4.375 13.0356 4.375 12.6875V12.25H5.25C5.48206 12.25 5.70462 12.1578 5.86872 11.9937C6.03281 11.8296 6.125 11.6071 6.125 11.375V10.5H7C7.23206 10.5 7.45462 10.4078 7.61872 10.2437C7.78281 10.0796 7.875 9.85706 7.875 9.625V9.4675C8.30638 9.58475 8.75612 9.625 9.1875 9.625C11.879 9.625 14 7.504 14 4.8125C14 2.121 11.879 0 9.1875 0ZM5.25 4.8125C5.25 2.604 6.979 0.875 9.1875 0.875C11.396 0.875 13.125 2.604 13.125 4.8125C13.125 7.021 11.396 8.75 9.1875 8.75C8.61 8.75 8.07362 8.66687 7.6335 8.44637C7.5668 8.41295 7.49266 8.39714 7.41813 8.40044C7.34359 8.40375 7.27114 8.42606 7.20766 8.46525C7.14418 8.50444 7.09178 8.55922 7.05543 8.62437C7.01908 8.68953 7 8.76289 7 8.8375V9.625H6.125C5.89294 9.625 5.67038 9.71719 5.50628 9.88128C5.34219 10.0454 5.25 10.2679 5.25 10.5V11.375H4.375C4.14294 11.375 3.92038 11.4672 3.75628 11.6313C3.59219 11.7954 3.5 12.0179 3.5 12.25V12.6875C3.5 12.8035 3.45391 12.9148 3.37186 12.9969C3.28981 13.0789 3.17853 13.125 3.0625 13.125H1.3125C1.19647 13.125 1.08519 13.0789 1.00314 12.9969C0.921094 12.9148 0.875 12.8035 0.875 12.6875V11.2997C0.875025 11.1839 0.920965 11.0729 1.00275 10.9909L4.97612 7.0175C5.35412 6.6395 5.43287 6.104 5.33662 5.656C5.27825 5.37865 5.24922 5.09593 5.25 4.8125V4.8125Z" fill="#336699" />
+                                </svg>
+                            </div>
+                            Trocar Senha
+                        </button>
+                    </h2>
+                    <div id="collapse-trocar-senha" class="accordion-collapse collapse" aria-labelledby="collapse-trocar-senha" data-bs-parent="#accordionFlushExample">
+                        <form action="" method="post">
+                            <div class="accordion-body d-flex flex-column">
+                                <input class="input-trocarSenha" required type="password"  nome="senha-atual" placeholder="Senha atual">
+                                <input class="input-trocarSenha" required type="password" nome="nova-senha" placeholder="Nova senha">
+                                <input class="input-trocarSenha" required type="password" nome="repetir-senha" placeholder="Repetir senha">
+
+                                <button class="button-trocarSenha" type="button">
+                                    CONFIRMAR
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
                 <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                        Meus boletos
-                    </button>
-                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="collapse4" data-bs-parent="#accordionExample">
+                    <h2 class="accordion-header" id="collapseheader-boletos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-boletos" aria-expanded="false" aria-controls="collapse-boletos">
+                            <div class="box-iconMenu meus-boletos">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 0.5H0.675781V9.50781H0.5V0.5ZM2.82422 0.5H4.17578V9.50781H2.82422V0.5ZM6.32422 0.5H6.5V9.50781H6.32422V0.5ZM8.67578 0.5H8.82422V9.50781H8.67578V0.5ZM13.5 11.4922V11.5H0.5V11.4922H13.5ZM12.1758 9.50781V0.5H12.8242H13.5V9.50781H12.1758Z" fill="#336699" stroke="#336699" />
+                                </svg>
+                            </div>
+                            Meus boletos
+                        </button>
+                    </h2>
+                    <div id="collapse-boletos" class="accordion-collapse collapse" aria-labelledby="collapse-boletos" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
             <h2>
                 Facilidade pra Você
             </h2>

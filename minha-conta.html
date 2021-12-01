@@ -156,7 +156,7 @@
 
                     </div>
                     <div class="col-md-1 d-flex flex-row justify-content-end align-items-center">
-                        <a class="box-cart position-relative">
+                        <a href="carrinho.html" class="box-cart position-relative">
                             <svg width="40" height="37" viewBox="0 0 40 37" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -339,118 +339,220 @@
 
 
 
+
     <!--Body-->
 
-    <div class="container-fluid header-cadastroDados">
-        <div class="row">
-            <div class="aviso d-md-flex d-sm-none w-100">
-                Cadastre sua empresa. Acesso imediato às ofertas exclusivas para CNPJ!
-            </div>
-        </div>
-        <div class="container content-header d-md-block d-sm-none d-none">
-            <div class="row pt-0 pb-3">
-                <div class="col-md-2 d-flex flex-row justify-content-start align-items-center">
-                    <a href="index.html">
-                        <img class="img-fluid" src="img/logo_desk.png">
-                    </a>
-                </div>
-                <div class="col-md-10 d-flex flex-column justify-content-center align-items-end">
-                    <ul class="nav-categorias">
-                        <li>
-                            <a>
-                                Nossas Lojas
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                Regulamentos
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                Sobre Nós
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                Fale Conosco
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-paginas-sm">
-        <a href="index.html" class="opc-voltar">
-            <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 2L2 13L13 24" stroke="#336699" stroke-width="3" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </a>
-        <a href="index.html">
-            <img class="img-fluid" src="img/logox2.png">
-        </a>
-    </div>
 
-    <div class="container cadastro">
-        <div class="row hidden-sm">
-            <div class="col-12">
-                <a href="index.html" class="btn-voltar">
-                    < VOLTAR </a>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-12">
-                <h2 class="cadastroTitulo">
-                    <strong>
-                        Bem-Vindo!
-                    </strong><br>
-                    Agradecemos seu interesse em se cadastrar na loja virtual Hometeck.
-                </h2>
 
-                <div class="box-cadastrar">
-                    <h2>
-                        Por favor, informe abaixo o CNPJ que deseja cadastrar:
-                    </h2>
-                    <input id="maskCnpj" class="input-cnpj" type="text" name="cnpj" placeholder="[CNPJ]" maxlength="18">
-                    <a href="cadastro-dados.html" type="button" class="btn-entrar">
-                        ENTRAR
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="tituloFooter-sm">
-                    Caso queira falar com um atendente clique no ícone do WhatsApp.
-                </h2>
+                <div class="breadcrumb">
+                    <a href="index.html" class="btn-voltar">
+                        < VOLTAR </a>
+                            <p>
+                                Minha conta
+                            </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <script>
-        document.getElementById('maskCnpj').addEventListener('input', function (e) {
-            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
-            e.target.value = !x[2] ? x[1] : x[1] + '.' + x[2] + '.' + x[3] + '/' + x[4] + (x[5] ? '-' + x[5] : '');
-        });
-    </script>
-    <style>
-        header {
-            display: none;
-        }
+    <div class="container minha-conta">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tabs-minha-conta nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link ultimo-pedido" id="v-pills-ultimo-pedido-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-ultimo-pedido" type="button" role="tab"
+                        aria-controls="v-pills-ultimo-pedido" aria-selected="false">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="9" cy="9" r="8.25" stroke="#336699" stroke-width="1.5" />
+                            <path d="M5 8.66667L8.6 12L14 6" stroke="#336699" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Último Pedido
+                    </button>
+                    <button class="nav-link meus-dados" id="v-pills-meus-dados-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-meus-dados" type="button" role="tab" aria-controls="v-pills-meus-dados"
+                        aria-selected="false">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 1C5.579 1 1 5.579 1 11C1 14.189 2.592 17.078 5 18.924V19H5.102C6.77 20.245 8.813 21 11 21C13.187 21 15.23 20.245 16.898 19H17V18.924C19.408 17.078 21 14.19 21 11C21 5.579 16.421 1 11 1ZM7.074 17.927C7.22136 17.2604 7.59154 16.6639 8.12347 16.236C8.6554 15.808 9.3173 15.5742 10 15.573H12C12.6827 15.5744 13.3445 15.8083 13.8764 16.2362C14.4082 16.6641 14.7785 17.2605 14.926 17.927C13.758 18.604 12.416 19 11 19C9.584 19 8.242 18.604 7.074 17.927ZM16.61 16.641C16.2286 15.7329 15.5877 14.9574 14.7677 14.4117C13.9477 13.866 12.985 13.5742 12 13.573H10C9.01501 13.5742 8.05227 13.866 7.23227 14.4117C6.41227 14.9574 5.77144 15.7329 5.39 16.641C3.923 15.182 3 13.176 3 11C3 6.663 6.663 3 11 3C15.337 3 19 6.663 19 11C19 13.176 18.077 15.182 16.61 16.641Z"
+                                fill="#336699" stroke="white" stroke-width="0.7" />
+                            <path
+                                d="M11 5C8.72 5 7 6.72 7 9C7 11.28 8.72 13 11 13C13.28 13 15 11.28 15 9C15 6.72 13.28 5 11 5ZM11 11C9.822 11 9 10.178 9 9C9 7.822 9.822 7 11 7C12.178 7 13 7.822 13 9C13 10.178 12.178 11 11 11Z"
+                                fill="#336699" stroke="white" stroke-width="0.6" />
+                        </svg>
+                        Meus Dados
+                    </button>
+                    <button class="nav-link trocar-senha" id="v-pills-trocar-senha-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-trocar-senha" type="button" role="tab"
+                        aria-controls="v-pills-trocar-senha" aria-selected="false">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 4.5C15 4.89782 14.842 5.27936 14.5607 5.56066C14.2794 5.84196 13.8978 6 13.5 6C13.1022 6 12.7206 5.84196 12.4393 5.56066C12.158 5.27936 12 4.89782 12 4.5C12 4.10218 12.158 3.72064 12.4393 3.43934C12.7206 3.15804 13.1022 3 13.5 3C13.8978 3 14.2794 3.15804 14.5607 3.43934C14.842 3.72064 15 4.10218 15 4.5Z"
+                                fill="#336699" />
+                            <path
+                                d="M11.8125 0C8.352 0 5.625 2.727 5.625 6.1875C5.625 6.63413 5.67 7.083 5.76225 7.50938C5.8275 7.81313 5.75325 8.07638 5.6025 8.22713L0.495 13.3346C0.337988 13.4914 0.213447 13.6777 0.128508 13.8827C0.043569 14.0877 -0.000100413 14.3075 1.73371e-07 14.5294V16.3125C1.73371e-07 16.7601 0.17779 17.1893 0.494258 17.5057C0.810725 17.8222 1.23995 18 1.6875 18H3.9375C4.38505 18 4.81428 17.8222 5.13074 17.5057C5.44721 17.1893 5.625 16.7601 5.625 16.3125V15.75H6.75C7.04837 15.75 7.33452 15.6315 7.5455 15.4205C7.75647 15.2095 7.875 14.9234 7.875 14.625V13.5H9C9.29837 13.5 9.58452 13.3815 9.7955 13.1705C10.0065 12.9595 10.125 12.6734 10.125 12.375V12.1725C10.6796 12.3232 11.2579 12.375 11.8125 12.375C15.273 12.375 18 9.648 18 6.1875C18 2.727 15.273 0 11.8125 0ZM6.75 6.1875C6.75 3.348 8.973 1.125 11.8125 1.125C14.652 1.125 16.875 3.348 16.875 6.1875C16.875 9.027 14.652 11.25 11.8125 11.25C11.07 11.25 10.3804 11.1431 9.8145 10.8596C9.72874 10.8167 9.63342 10.7963 9.53759 10.8006C9.44176 10.8048 9.34861 10.8335 9.26699 10.8839C9.18538 10.9343 9.118 11.0047 9.07127 11.0885C9.02454 11.1722 9 11.2666 9 11.3625V12.375H7.875C7.57663 12.375 7.29048 12.4935 7.0795 12.7045C6.86853 12.9155 6.75 13.2016 6.75 13.5V14.625H5.625C5.32663 14.625 5.04048 14.7435 4.8295 14.9545C4.61853 15.1655 4.5 15.4516 4.5 15.75V16.3125C4.5 16.4617 4.44074 16.6048 4.33525 16.7102C4.22976 16.8157 4.08668 16.875 3.9375 16.875H1.6875C1.53832 16.875 1.39524 16.8157 1.28975 16.7102C1.18426 16.6048 1.125 16.4617 1.125 16.3125V14.5282C1.12503 14.3794 1.1841 14.2365 1.28925 14.1311L6.39787 9.0225C6.88387 8.5365 6.98513 7.848 6.86137 7.272C6.78633 6.9154 6.749 6.55191 6.75 6.1875Z"
+                                fill="#336699" />
+                        </svg>
 
+                        Trocar Senha
+                    </button>
+                    <button class="nav-link todos-pedidos" id="v-pills-todos-os-pedidos-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-todos-os-pedidos" type="button" role="tab"
+                        aria-controls="v-pills-todos-os-pedidos" aria-selected="false">
+                        <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.1554 9.68734C11.211 9.74236 11.2559 9.80773 11.2876 9.8797C11.3194 9.95167 11.3373 10.0288 11.3403 10.1068C11.3433 10.1847 11.3314 10.2618 11.3052 10.3338C11.2791 10.4058 11.2392 10.4712 11.1879 10.5262L7.88143 14.0816C7.83024 14.1368 7.76859 14.1806 7.70001 14.2105C7.63143 14.2404 7.55726 14.2558 7.48175 14.2558C7.40624 14.2558 7.33088 14.2404 7.25998 14.2106C7.18908 14.1807 7.12404 14.137 7.06857 14.0818L5.27751 12.3049C5.222 12.2498 5.17713 12.1844 5.14546 12.1125C5.11378 12.0405 5.09592 11.9634 5.0929 11.8855C5.08988 11.8076 5.10176 11.7304 5.12785 11.6585C5.15395 11.5865 5.19375 11.5211 5.24499 11.466C5.34846 11.3547 5.49224 11.2922 5.64468 11.2922C5.72016 11.2921 5.79549 11.3075 5.86638 11.3373C5.93727 11.3671 6.00233 11.4107 6.05784 11.4658L7.42626 12.8246L10.3425 9.68752C10.3937 9.63234 10.4554 9.58855 10.5239 9.55867C10.5925 9.52879 10.6667 9.5134 10.7422 9.51338C10.8177 9.51336 10.8931 9.52872 10.964 9.55857C11.0349 9.58842 11.0999 9.63218 11.1554 9.68734Z"
+                                fill="#336699" />
+                            <path
+                                d="M7.98922 1.18929C8.74165 1.18916 9.47525 1.50175 10.0286 2.05831C10.582 2.61486 10.9099 3.36979 10.9401 4.15701L10.9629 4.75066L5.2888 4.75167L5.26604 4.15802C5.23584 3.3708 5.50579 2.61577 6.01648 2.05902C6.52718 1.50228 7.23679 1.18943 7.98922 1.18929ZM12.0977 4.75046L12.0749 4.15681C12.0326 3.0547 11.5736 1.9978 10.7989 1.21863C10.0241 0.43945 8.99708 0.00181787 7.94368 0.00200522C6.89029 0.00219256 5.89682 0.440184 5.18185 1.21963C4.46687 1.99907 4.08895 3.05611 4.13122 4.15822L4.15399 4.75187L0.182149 4.75257L0.637523 16.6255C0.661677 17.2552 0.923963 17.8592 1.36668 18.3044C1.8094 18.7497 2.39628 18.9997 2.99822 18.9996L14.3463 18.9976C14.9483 18.9975 15.516 18.7472 15.9245 18.3018C16.3331 17.8564 16.549 17.2524 16.5249 16.6226L16.0695 4.74975L12.0977 4.75046ZM1.3625 5.93966L14.9802 5.93724L15.3901 16.6228C15.4022 16.9377 15.2942 17.2397 15.0899 17.4624C14.8856 17.6851 14.6018 17.8103 14.3008 17.8103L2.95268 17.8124C2.65171 17.8124 2.35827 17.6874 2.13691 17.4647C1.91555 17.2421 1.78441 16.9402 1.77233 16.6253L1.3625 5.93966Z"
+                                fill="#336699" />
+                        </svg>
+                        Todos os Pedidos
+                    </button>
+                    <button class="nav-link boletos" id="v-pills-boletos-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-boletos" type="button" role="tab" aria-controls="v-pills-boletos"
+                        aria-selected="false">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.5 0.5H1.01172V12.8438H0.5V0.5ZM3.48828 0.5H5.51172V12.8438H3.48828V0.5ZM7.98828 0.5H8.5V12.8438H7.98828V0.5ZM11.0117 0.5H11.4883V12.8438H11.0117V0.5ZM17.5 15.1562V15.5H0.5V15.1562H17.5ZM15.5117 12.8438V0.5H16.4883H17.5V12.8438H15.5117Z"
+                                fill="#336699" stroke="#336699" />
+                        </svg>
+                        Boletos
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane style fade show active mensagem-aviso" id="v-pills-mensagem" role="tabpanel"
+                        aria-labelledby="v-pills-mensagem-tab">
+                        <p>
+                            Olá <strong>Fulano de Tal</strong>. Este é o espaço da sua conta com CNPJ
+                            XX.XXX.XXX/XXXX-XX.
+                        </p>
+                        <p>
+                            Nossos atendentes estão online de segunda à sexta das 7h30 às 18h e aos sábados das 7h30 às
+                            14h
+                            pelo nosso WhatsApp (XX) XXXX-XXXX.
+                        </p>
+                    </div>
+                    <div class="tab-pane style fade" id="v-pills-ultimo-pedido" role="tabpanel"
+                        aria-labelledby="v-pills-ultimo-pedido-tab">
+                        Último Pedido
+                    </div>
+                    <div class="tab-pane fade cadastro-dados" id="v-pills-meus-dados" role="tabpanel"
+                        aria-labelledby="v-pills-meus-dados-tab">
+
+                        <div class="tab-dados">
+                            <div class="parent-dados">
+                                <div class="subTitulo">
+                                    Razão Social:
+                                </div>
+                                <div class="desc">
+                                    Empresa De Tal LTDA.
+                                </div>
+                                <div class="subTitulo">
+                                    Nome Fantasia:
+                                </div>
+                                <div class="desc">
+                                    Empresa Tal
+                                </div>
+                                <div class="subTitulo">
+                                    CNPJ:
+                                </div>
+                                <div class="desc">
+                                    XX.XXX.XXX/XXXX-XX
+                                </div>
+                                <div class="subTitulo">
+                                    Inscrição Estadual:
+                                </div>
+                                <div class="desc">
+                                    XXXXXXXXX
+                                </div>
+                                <div class="subTitulo">
+                                    Endereço da Empresa:
+                                </div>
+                                <div class="desc">
+                                    Brasília, DF - 70333-333
+                                </div>
+                            </div>
+                            <p class="fist-p-meus-dados">
+                                Dados extraídos do <i>SINTEGRA.</i>
+                            </p>
+                        </div>
+
+                        <div class="tab-dados mt-3">
+                            <div class="parent-dados2">
+                                <div class="subTitulo">
+                                    Nome do Comprador:
+                                </div>
+                                <div class="desc">
+                                    Fulano de Tal
+                                </div>
+                                <div class="subTitulo">
+                                    Telefone:
+                                </div>
+                                <div class="desc">
+                                    (XX) XXXX-XXXX
+                                </div>
+                                <div class="subTitulo">
+                                    E-mail:
+                                </div>
+                                <div class="desc">
+                                    xxxxx@xxxx.com.br
+                                </div>
+                            </div>
+                            <p class="p-meus-dados">
+                                <strong>
+                                    Atenção!
+                                </strong> <br>
+                                Para alteração de dados de contato, por gentileza, fale com a nossa <strong>Central de
+                                    Atendimento</strong> pelo WhatsApp (XX) XXXX-XXXX.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade style" id="v-pills-trocar-senha" role="tabpanel"
+                        aria-labelledby="v-pills-trocar-senha-tab">
+                        <div class="tab-dados">
+                            <form class="d-flex flex-column" action="" method="post">
+                                <input class="input-trocarSenha" required type="password" nome="senha-atual"
+                                    placeholder="Senha atual">
+                                <input class="input-trocarSenha" required type="password" nome="nova-senha"
+                                    placeholder="Nova senha">
+                                <input class="input-trocarSenha" required type="password" nome="repetir-senha"
+                                    placeholder="Repetir senha">
+
+                                <button class="button-trocarSenha" type="button">
+                                    CONFIRMAR
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade style" id="v-pills-todos-os-pedidos" role="tabpanel"
+                        aria-labelledby="v-pills-todos-os-pedidos-tab">
+                        Todos os Pedidos
+                    </div>
+                    <div class="tab-pane fade style" id="v-pills-boletos" role="tabpanel"
+                        aria-labelledby="v-pills-boletos-tab">
+                        Boletos
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
         footer {
             display: none;
-        }
-
-        @media(max-width: 768px) {
-            footer {
-                display: block;
-            }
         }
     </style>
 
@@ -566,6 +668,9 @@
             </div>
         </div>
     </footer>
+
+
+
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
