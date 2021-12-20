@@ -24,115 +24,127 @@ jQuery(window).load(function () {
 });
 */
 
-const menuSize = '100%';
+const menuSize = "100%";
 
 let open = false;
 
-document.querySelector('#btnMenu').addEventListener('click', e => {
+document.querySelector("#btnMenu").addEventListener("click", (e) => {
   open = !open;
   toggleMenu();
-})
+});
 
-document.querySelector('#btnClose').addEventListener('click', e => {
+document.querySelector("#btnClose").addEventListener("click", (e) => {
   open = false;
   toggleMenu();
-})
-document.querySelector('#btnMenus ').addEventListener('click', e => {
+});
+document.querySelector("#btnMenus ").addEventListener("click", (e) => {
   open = false;
   toggleMenu();
-})
-document.querySelector('.background-slider').addEventListener('click', e => {
+});
+document.querySelector(".background-slider").addEventListener("click", (e) => {
   open = false;
 
   toggleMenu();
-})
+});
 
 function toggleMenu() {
-  document.querySelector('.background-slider').style.display = "block";
+  document.querySelector(".background-slider").style.display = "block";
   if (open) {
-    document.querySelector('#slideMenu').style.left = "0%";
-    document.querySelector('body').style.overflow = "hidden";
+    document.querySelector("#slideMenu").style.left = "0%";
+    document.querySelector("body").style.overflow = "hidden";
     return;
   }
-  document.querySelector('.background-slider').style.display = "none";
-  document.querySelector('body').style.overflow = "auto";
-  document.querySelector('#slideMenu').style.left = `-${menuSize}`;
+  document.querySelector(".background-slider").style.display = "none";
+  document.querySelector("body").style.overflow = "auto";
+  document.querySelector("#slideMenu").style.left = `-${menuSize}`;
 }
 
-$('.slider-principal').slick({
+$(".slider-principal").slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  prevArrow: '<button type="button" class="arrows-position slider-principal-prev"><img class="img-fluid" src="img/arrowleft-p.png"></button>',
-  nextArrow: '<button type="button" class="arrows-position slider-principal-next"><img class="img-fluid" src="img/arrowright-p.png"></button>',
+  prevArrow:
+    '<button type="button" class="arrows-position slider-principal-prev"><img class="img-fluid" src="img/arrowleft-banner.png"></button>',
+  nextArrow:
+    '<button type="button" class="arrows-position slider-principal-next"><img class="img-fluid" src="img/arrowrigth-banner.png"></button>',
   dots: true,
-  dotsClass: 'dots-slider-principal',
+  dotsClass: "dots-slider-principal",
   enterMode: true,
-  variableWidth: false
+  variableWidth: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        prevArrow:
+          '<button type="button" class="arrows-position slider-principal-prev"><img class="img-fluid" src="img/arrowleft-m-banner.png"></button>',
+        nextArrow:
+          '<button type="button" class="arrows-position slider-principal-next"><img class="img-fluid" src="img/arrowrigth-m-banner.png"></button>',
+      },
+    },
+  ],
 });
 
-$('.slider-produto').slick({
+$(".slider-produto").slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: true,
-  prevArrow: '<button type="button" class="arrows-position slider-principal-prev"><svg width="22" height="52" viewBox="0 0 22 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999999 51L21 26L0.999999 1" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-  nextArrow: '<button type="button" class="arrows-position slider-principal-next"><svg width="22" height="52" viewBox="0 0 22 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999999 51L21 26L0.999999 1" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-  dots: false, responsive: [
+  prevArrow:
+    '<button type="button" class="arrows-position slider-principal-prev"><svg width="22" height="52" viewBox="0 0 22 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999999 51L21 26L0.999999 1" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+  nextArrow:
+    '<button type="button" class="arrows-position slider-principal-next"><svg width="22" height="52" viewBox="0 0 22 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999999 51L21 26L0.999999 1" stroke="#336699" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+  dots: false,
+  responsive: [
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        prevArrow: '<button type="button" class="arrows-position slider-principal-prev"><svg width="12" height="32" viewBox="0 0 12 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L1 16L11 31" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-        nextArrow: '<button type="button" class="arrows-position slider-principal-next"><svg width="12" height="32" viewBox="0 0 12 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L11 16L1 1" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-      }
+        prevArrow:
+          '<button type="button" class="arrows-position slider-principal-prev"><svg width="12" height="32" viewBox="0 0 12 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L1 16L11 31" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        nextArrow:
+          '<button type="button" class="arrows-position slider-principal-next"><svg width="12" height="32" viewBox="0 0 12 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 31L11 16L1 1" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+      },
     },
-  ]
+  ],
 });
 
-$('.img-principal').slick({
+$(".img-principal").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.galeria'
+  asNavFor: ".galeria",
 });
 
-$('.galeria').slick({
+$(".galeria").slick({
   vertical: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.img-principal',
+  asNavFor: ".img-principal",
   dots: false,
   focusOnSelect: true,
-  prevArrow: '<button type="button" class="slider-galeria-prev" style="display: none;"></button>',
-  nextArrow: '<button type="button" class="slider-galeria-next pb-2"><svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L22 16L42 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+  prevArrow:
+    '<button type="button" class="slider-galeria-prev" style="display: none;"></button>',
+  nextArrow:
+    '<button type="button" class="slider-galeria-next pb-2"><svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L22 16L42 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
 });
-
-
-
-
-
 
 /* Scroll Top*/
 
-var btn = $('#buttonTop');
+var btn = $("#buttonTop");
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
+    btn.addClass("show");
   } else {
-    btn.removeClass('show');
+    btn.removeClass("show");
   }
 });
 
-btn.on('click', function (e) {
+btn.on("click", function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: 0 }, '300');
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
-
-
 /* Scroll Top*/
-
