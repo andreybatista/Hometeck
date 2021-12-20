@@ -55,6 +55,10 @@
 /*FONTS DESKTOP*/
 
 @media (min-width: 768px) {
+  .filter select {
+    padding: 8px 10px;
+    box-shadow: 0px 1px 3px rgba(199, 199, 199, 0.5);
+  }
   section.list-produto {
     padding-top: 17px;
     margin-bottom: 60px;

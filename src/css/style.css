@@ -1402,15 +1402,13 @@ a.produto-categoria:first-child {
   border: none !important;
 }
 
-select {
+.filter select {
   border: none;
-  padding: 8px 10px;
+  padding: 8px 2px;
   margin-left: 0 !important;
   cursor: pointer;
-  /* CINZA_CLARO */
   background: var(--cinza-claro);
-  /* Header_Bar */
-  box-shadow: 0px 1px 3px rgba(199, 199, 199, 0.5);
+  box-shadow: none;
   border-radius: 3px;
   width: 105px;
   font-family: Poppins;
